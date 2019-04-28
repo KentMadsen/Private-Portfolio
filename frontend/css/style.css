@@ -1,58 +1,30 @@
 /*
 
 */
-body
-{
+body {
   margin: 0px;
   padding: 0px;
 }
 
-header
-{
-
-}
-
-#header-main-navigation
-{
-
-}
-
-#header-main-navigation ol
-{
+#header-main-navigation ol {
   width: 100%;
   margin: 0px;
   padding: 0px;
   display: flex;
   list-style: none;
   justify-content: center;
-
 }
 
-#header-main-navigation ol li
-{
+#header-main-navigation ol li {
   flex-wrap: wrap;
-
-
 }
 
-#header-main-navigation ol li a
-{
+#header-main-navigation ol li a {
   color: black;
   text-decoration: none;
-
-  margin:0px;
+  margin: 0px;
   margin-left: 16px;
   margin-right: 16px;
-
-
 }
 
-main
-{
-
-}
-
-footer
-{
-
-}
+/*# sourceMappingURL=style.css.map */
