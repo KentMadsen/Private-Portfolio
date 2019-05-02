@@ -1,24 +1,50 @@
 /*
 
 */
+$boundary-width:1080px;
+
+html
+{
+  min-height: 100%;
+  margin: 0px;
+}
+
+.boundary
+{
+  width: $boundary-width;
+
+  margin: 0px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
 body
 {
   margin: 0px;
   padding: 0px;
 
+  min-height: 100%;
+
   background-color: #fcfcfc;
+
+  display: grid;
+  grid-gap: 32px;
+  grid-template-areas: "header_area" "main_area" "footer_area";
 }
 
 header
 {
+    grid-area: header_area;
+
     margin: 0px;
     padding: 0px;
 }
 
 #application
 {
-  margin: 0px;
-  padding: 0px;
+
+
 }
 
 #header-main-navigation
@@ -31,14 +57,13 @@ header
   width: 100%;
   margin: 0px;
 
-  margin-top: 8px;
-  margin-bottom: 8px;
-
   padding: 0px;
 
   display: flex;
 
   list-style: none;
+  justify-content: flex-end;
+
 }
 
 #header-main-navigation ol li
@@ -47,10 +72,10 @@ header
 
   margin: 0px;
   margin-top: 8px;
+  margin-bottom: 8px;
 
-  border-bottom: 8px;
-
-  justify-content: flex-end;
+  margin-left: 16px;
+  margin-right: 16px;
 
 }
 
@@ -60,8 +85,6 @@ header
   text-decoration: none;
 
   margin:0px;
-  margin-left: 16px;
-  margin-right: 16px;
 
   font-family: 'Open Sans';
   font-size: 14px;
@@ -73,19 +96,98 @@ header
 
 }
 
+.page-title h1
+{
+  font-family: 'Raleway';
+  font-size: 40px;
+  margin-top: 32px;
+
+}
+
 main
 {
+  grid-area: main_area;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-logo
+{
+  font-size: 32px;
+
+  width: 50px;
+  height: 40px;
+
+  text-align: center;
+}
+
+.home-social-menu
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.social-logo i
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#home-front
+{
+  display: grid;
+  grid-template-columns: 450px auto;
+  grid-gap: 32px;
+
+  width: 600px;
+}
+
+#home-social-links
+{
+  display: inline-grid;
+
+}
+
+#home-information
+{
+  display: inline-grid;
+  border-left: 1px solid black;
+  padding-left: 26px;
+
+}
+
+#home-information p
+{
+  font-size: 56px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.link:hover
+{
+  color: black;
+
+}
+
+.link
+{
+  color: gray;
+
 }
 
 footer
 {
+  grid-area: footer_area;
 
-    margin: 0px;
-    padding: 0px;
-
+  margin: 0px;
+  padding: 0px;
 }
 
 #footer-misc-menu
@@ -96,7 +198,7 @@ footer
 #footer-misc-menu ul
 {
   display: flex;
-
+  justify-content: center;
 
 
 }
@@ -119,7 +221,7 @@ footer
   text-decoration: none;
 
   font-family: 'Open Sans';
-  font-size: 9px;
+  font-size: 10px;
 
   text-transform: uppercase;
 }
