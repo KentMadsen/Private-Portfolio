@@ -5,11 +5,20 @@ body
 {
   margin: 0px;
   padding: 0px;
+
+  background-color: #fcfcfc;
 }
 
 header
 {
+    margin: 0px;
+    padding: 0px;
+}
 
+#application
+{
+  margin: 0px;
+  padding: 0px;
 }
 
 #header-main-navigation
@@ -21,38 +30,101 @@ header
 {
   width: 100%;
   margin: 0px;
-  padding: 0px;
-  display: flex;
-  list-style: none;
-  justify-content: center;
 
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  padding: 0px;
+
+  display: flex;
+
+  list-style: none;
 }
 
 #header-main-navigation ol li
 {
   flex-wrap: wrap;
 
+  margin: 0px;
+  margin-top: 8px;
+
+  border-bottom: 8px;
+
+  justify-content: flex-end;
 
 }
 
 #header-main-navigation ol li a
 {
-  color: black;
+  color: gray;
   text-decoration: none;
 
   margin:0px;
   margin-left: 16px;
   margin-right: 16px;
 
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+
+#header-main-navigation ol li a:hover
+{
+  color: black;
 
 }
 
 main
 {
 
+    margin: 0px;
+    padding: 0px;
 }
 
 footer
 {
 
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#footer-misc-menu
+{
+
+}
+
+#footer-misc-menu ul
+{
+  display: flex;
+
+
+
+}
+
+#footer-misc-menu ul li
+{
+
+  list-style: none;
+
+  margin: 0px;
+
+  margin-left: 8px;
+  margin-right: 8px;
+
+}
+
+#footer-misc-menu ul li a
+{
+  color:gray;
+  text-decoration: none;
+
+  font-family: 'Open Sans';
+  font-size: 9px;
+
+  text-transform: uppercase;
+}
+
+#footer-misc-menu ul li a:hover
+{
+  color:black;
 }
