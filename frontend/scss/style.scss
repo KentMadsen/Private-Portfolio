@@ -29,8 +29,8 @@ body
   background-color: #fcfcfc;
 
   display: grid;
-  grid-gap: 32px;
   grid-template-areas: "header_area" "main_area" "footer_area";
+  grid-gap: 32px;
 }
 
 header
