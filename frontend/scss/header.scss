@@ -5,6 +5,25 @@ header
 
 }
 
+.header-main-navigation-list
+{
+
+
+}
+
+.header-main-navigation-list li
+{
+  list-style: none;
+}
+
+.header-main-navigation-list a
+{
+
+    color: #7f8fa6;
+    font-family: 'Oxygen';
+    text-decoration: none;
+}
+
 header p
 {
 
@@ -60,7 +79,11 @@ header ul
 {
   display: flex;
 
-  justify-content: flex-end;
+}
+
+.end
+{
+  justify-content: flex-end;;
 }
 
 .nav-header-menu li
