@@ -1,9 +1,10 @@
 
-var footer-navigation = new Vue(
+var footer_app = new Vue(
   {
     el:'#footer-navigation',
     data:
     {
+
 
     },
     watch:
