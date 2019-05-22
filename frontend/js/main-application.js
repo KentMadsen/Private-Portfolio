@@ -1,4 +1,4 @@
-var standard_title = "DesignerMadsen";
+var standard_title = "DesignerMadsen - Application";
 
 function setTitle(title)
 {
