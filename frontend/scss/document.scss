@@ -52,7 +52,12 @@ section:last-child
 {
   background-color: #c0392b;
   border: 1px solid rgba(0, 0, 0, 0.0) !important;
-  color: white;
+}
+
+
+.activated-menu-option p
+{
+  color: white !important;
 
 }
 
@@ -60,7 +65,7 @@ section:last-child
 {
   @extend %not-selectable;
   @extend %menu-option;
-  
+
   list-style: none;
 
   padding-top: 8px;
@@ -80,7 +85,10 @@ section:last-child
 
   font-size: 12px;
   text-transform: uppercase;
+
   font-family:$menu-and-link-font;
+
+  color: $link-color;
 }
 
 .card-container
@@ -102,7 +110,7 @@ section:last-child
 .section-name
 {
   font-size: 24px;
-  font-family: 'raleway';
+  font-family: $menu-and-link-font;
   font-weight: bold;
   text-align: center;
   margin-bottom: 12px;

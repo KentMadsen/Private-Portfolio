@@ -22,7 +22,7 @@ header
 
 .header-main-navigation-list a
 {
-    color: #7f8fa6;
+    color: $link-color;
     font-family: $menu-and-link-font;
     text-decoration: none;
 }
@@ -60,7 +60,7 @@ header ul
 
 .nav-header-menu a
 {
-  color: #7f8fa6;
+  color: $link-color;
   font-family: $menu-and-link-font;
   text-decoration: none;
 }
