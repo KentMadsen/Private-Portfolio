@@ -1,7 +1,6 @@
 /*
 
 */
-
 .misc a
 {
   color: $link-color;
@@ -12,7 +11,7 @@
 .misc a:hover
 {
 
-    color: #c0392b;
+    color: $link-color-activated;
 
 }
 
@@ -43,7 +42,7 @@
 
 .misc p
 {
-  color: #7f8fa6;
+  color: $link-color;
   font-family: $menu-and-link-font;
   margin: 0px;
   padding: 0px;

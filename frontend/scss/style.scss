@@ -20,7 +20,8 @@ body
   padding: 0px;
 
   width: 100%;
-  background-color: #ecf0f1;
+
+  background-color: $background-color;
 }
 
 
@@ -52,6 +53,7 @@ body
 .four-elements-container
 {
   display: grid;
+
   width: 100%;
   min-height: 200px;
 
@@ -93,5 +95,7 @@ body
 @import './page/navigation.scss';
 
 @import './page/document.scss';
+
+@import './site/frontpage.scss';
 
 @import './platform/mobile.scss';

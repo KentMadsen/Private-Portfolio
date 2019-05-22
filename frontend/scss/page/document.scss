@@ -13,7 +13,6 @@ section
   margin-bottom: 24px;
 }
 
-
 section:first-child
 {
   margin-top: 0px;
@@ -24,99 +23,40 @@ section:last-child
   margin-bottom: 0px;
 }
 
-#frontpage-project-area
-{
-
-
-  width: 100%;
-}
-
-#frontpage-filter-area
-{
-
-}
-
-#frontpage-filter-area ul
-{
-  display: flex;
-  justify-content: space-between;
-
-  padding: 0px;
-
-  margin: 0px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
 
 .activated-menu-option
 {
-  background-color: #c0392b;
-  border: 1px solid rgba(0, 0, 0, 0.0) !important;
+  background-color: $link-color-activated; 
+  border:1px solid rgba($color: #ffffff, $alpha: 0.0) !important;
 }
 
-
-.activated-menu-option p
+.activated-menu-option:hover
 {
-  color: white !important;
+  
+  border:1px solid rgba($color: #ffffff, $alpha: 0.0) !important;
 
 }
 
-#frontpage-filter-area ul li
-{
-  @extend %not-selectable;
-  @extend %menu-option;
-
-  list-style: none;
-
-  padding-top: 8px;
-  padding-bottom: 8px;
-
-  padding-left: 32px;
-  padding-right: 32px;
-
-  border: 1px solid #b2bec3;
-  font-weight: bold;
-}
-
-#frontpage-filter-area ul li p
-{
-  margin: 0px;
-  padding: 0px;
-
-  font-size: 12px;
-  text-transform: uppercase;
-
-  font-family:$menu-and-link-font;
-
-  color: $link-color;
-}
-
-.card-container
-{
-  height: 340px;
-  display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-
-  grid-gap: 0px;
-}
-
-.card
-{
-
-}
 
 .section-name
 {
   font-size: 24px;
   font-family: $menu-and-link-font;
   font-weight: bold;
+  
   text-align: center;
+
   margin-bottom: 12px;
 }
 
-.overlay
+.section-option-description
 {
-  background-color: #b2bec3;
+  text-align: center;
+  font-family: $menu-and-link-font;
+  
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  font-size: 14px;
 }
+

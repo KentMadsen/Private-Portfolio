@@ -42,7 +42,7 @@ header ul
 
 .header-active-page
 {
-  border-bottom: 1px solid #c0392b;
+  border-bottom: 1px solid $link-color-activated;
 }
 
 .nav-header-menu ul
@@ -67,7 +67,7 @@ header ul
 
 .nav-header-menu a:hover
 {
-  color: #c0392b;
+  color: $link-color-activated;
 }
 
 
@@ -86,7 +86,7 @@ header ul
 
 .end
 {
-  justify-content: flex-end;;
+  justify-content: flex-end;
 }
 
 .nav-header-menu li
