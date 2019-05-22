@@ -1,0 +1,74 @@
+
+.social-menu
+{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.social-menu li
+{
+  list-style: none;
+
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.social-menu li a
+{
+  color: black;
+  font-size: 24px;
+}
+
+
+.social-menu .social-facebook:hover
+{
+  color: blue;
+
+
+}
+
+.social-menu .social-twitter:hover
+{
+  color: blue;
+
+
+}
+
+.social-menu .social-medium:hover
+{
+  color: blue;
+
+
+}
+
+.social-menu .social-behance:hover
+{
+  color: blue;
+
+
+}
+
+.social-menu .social-linkedin:hover
+{
+  color: blue;
+
+
+}
+
+.social-menu .social-deviantart:hover
+{
+  color: blue;
+
+}
+
+.boundary
+{
+  width: 1420px;
+
+  margin: 0px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 0px;
+}
