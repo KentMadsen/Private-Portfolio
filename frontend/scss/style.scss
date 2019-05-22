@@ -1,3 +1,4 @@
+@import './variables.scss';
 
 $menu-text-size: 16px;
 
@@ -68,7 +69,7 @@ body
 
 .key
 {
-  font-family: 'oxygen';
+  font-family: $menu-and-link-font;
   text-align: center;
 }
 
@@ -76,7 +77,7 @@ body
 {
   text-align: center;
   font-weight: bold;
-  font-family: 'oxygen';
+  font-family: $menu-and-link-font;
 }
 
 #application
@@ -85,9 +86,12 @@ body
 
 }
 
-@import './variables.scss';
+@import './generic.scss';
+
 @import './header.scss';
 @import './footer.scss';
 @import './navigation.scss';
 
 @import './document.scss';
+
+@import './mobile.scss';

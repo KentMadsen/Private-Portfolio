@@ -1,3 +1,7 @@
+/*
+
+*/
+
 header
 {
   padding-top: 16px;
@@ -18,9 +22,8 @@ header
 
 .header-main-navigation-list a
 {
-
-    color: #7f8fa6;
-    font-family: 'Oxygen';
+    color: $link-color;
+    font-family: $menu-and-link-font;
     text-decoration: none;
 }
 
@@ -49,7 +52,7 @@ header ul
 
 .nav-header-menu p
 {
-  font-size: $menu-text-size;
+  font-size: $menu-and-link-font;
 
   margin: 0px;
   padding: 0px;
@@ -57,8 +60,8 @@ header ul
 
 .nav-header-menu a
 {
-  color: #7f8fa6;
-  font-family: 'Oxygen';
+  color: $link-color;
+  font-family: $menu-and-link-font;
   text-decoration: none;
 }
 
