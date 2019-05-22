@@ -1,8 +1,11 @@
+/*
+
+*/
 
 .misc a
 {
-  color: #7f8fa6;
-  font-family: 'Oxygen';
+  color: $link-color;
+  font-family: $menu-and-link-font;
   text-decoration: none;
 }
 
@@ -25,13 +28,14 @@
   padding: 0px;
 
   justify-content: center;
-  
+
   font-size: 12px;
 }
 
 .misc ul li
 {
   margin: 0px;
+
   margin-left: 32px;
   margin-right: 32px;
 
@@ -40,7 +44,7 @@
 .misc p
 {
   color: #7f8fa6;
-  font-family: 'oxygen';
+  font-family: $menu-and-link-font;
   margin: 0px;
   padding: 0px;
 }
