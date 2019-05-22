@@ -1,6 +1,6 @@
 var menu = new Vue(
   {
-    el:'#main-navigation',
+    el:'#menu-navigation',
     data:
     {
 
