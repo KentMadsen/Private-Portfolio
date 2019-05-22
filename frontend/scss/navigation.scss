@@ -2,6 +2,10 @@
 .social-menu
 {
   width: 100%;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+
   justify-content: center;
   display: flex;
 }
@@ -20,7 +24,6 @@
   font-size: 24px;
 }
 
-
 .social-menu .social-facebook:hover
 {
   color: blue;
@@ -32,13 +35,11 @@
 {
   color: blue;
 
-
 }
 
 .social-menu .social-medium:hover
 {
   color: blue;
-
 
 }
 
@@ -52,7 +53,6 @@
 .social-menu .social-linkedin:hover
 {
   color: blue;
-
 
 }
 

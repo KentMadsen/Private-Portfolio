@@ -5,7 +5,6 @@ header
 
 }
 
-
 header p
 {
 
@@ -24,8 +23,6 @@ header ul
   border-bottom: 1px solid #c0392b;
 }
 
-
-
 .nav-header-menu ul
 {
   padding: 0px;
@@ -34,6 +31,7 @@ header ul
 .nav-header-menu p
 {
   font-size: $menu-text-size;
+
   margin: 0px;
   padding: 0px;
 }
@@ -44,7 +42,6 @@ header ul
   font-family: 'Oxygen';
   text-decoration: none;
 }
-
 
 .nav-header-menu a:hover
 {

@@ -66,12 +66,6 @@ body
 
 
 
-main
-{
-
-
-}
-
 .key
 {
   font-family: 'oxygen';
@@ -91,6 +85,7 @@ main
 
 }
 
+@import './variables.scss';
 @import './header.scss';
 @import './footer.scss';
 @import './navigation.scss';
