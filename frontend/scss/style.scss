@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import './templates/variables.scss';
 
 $menu-text-size: 16px;
 
@@ -20,7 +20,8 @@ body
   padding: 0px;
 
   width: 100%;
-  background-color: #ecf0f1;
+
+  background-color: $background-color;
 }
 
 
@@ -28,9 +29,8 @@ body
 {
   width: 1420px;
 
-  margin: 0px;
-  margin-right: auto;
-  margin-left: auto;
+  @extend %generic-feature-no-margin;
+  @extend %generic-feature-margin-centralise-horizontal;
 
   padding: 0px;
 }
@@ -52,6 +52,7 @@ body
 .four-elements-container
 {
   display: grid;
+
   width: 100%;
   min-height: 200px;
 
@@ -86,12 +87,14 @@ body
 
 }
 
-@import './generic.scss';
+@import './templates/generic.scss';
 
-@import './header.scss';
-@import './footer.scss';
-@import './navigation.scss';
+@import './page/header.scss';
+@import './page/footer.scss';
+@import './page/navigation.scss';
 
-@import './document.scss';
+@import './page/document.scss';
 
-@import './mobile.scss';
+@import './site/frontpage.scss';
+
+@import './platform/mobile.scss';
