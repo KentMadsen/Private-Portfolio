@@ -9,21 +9,18 @@ main
 
 section
 {
-  margin-top: 32px;
   padding-top: 32px;
-
-  margin-bottom: 32px;
   padding-bottom: 32px;
 }
 
 section:first-child
 {
-  margin-top: 0px;
+  padding-top: 8px;
 }
 
 section:last-child
 {
-  margin-bottom: 0px;
+  padding-bottom: 8x;
 }
 
 
@@ -31,7 +28,7 @@ section:last-child
 {
   
   background-color: $link-color-activated;
-  border:1px solid rgba($color: #111111, $alpha: 1.0) !important;
+  border:1px solid rgba($color: #111111, $alpha: 0.0) !important;
 }
 
 .activated-menu-option p
