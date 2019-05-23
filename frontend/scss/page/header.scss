@@ -35,14 +35,13 @@ header p
 
 header ul
 {
-  padding: 0px;
-  margin: 0px;
+  @extend %generic-feature-no-margin;
 
 }
 
 .header-active-page
 {
-  border-bottom: 1px solid #c0392b;
+  border-bottom: 1px solid $link-color-activated;
 }
 
 .nav-header-menu ul
@@ -54,8 +53,7 @@ header ul
 {
   font-size: $menu-and-link-font;
 
-  margin: 0px;
-  padding: 0px;
+  @extend %generic-feature-no-margin;
 }
 
 .nav-header-menu a
@@ -67,7 +65,7 @@ header ul
 
 .nav-header-menu a:hover
 {
-  color: #c0392b;
+  color: $link-color-activated;
 }
 
 
@@ -82,11 +80,6 @@ header ul
 {
   display: flex;
 
-}
-
-.end
-{
-  justify-content: flex-end;;
 }
 
 .nav-header-menu li

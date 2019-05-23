@@ -1,0 +1,60 @@
+/*
+
+*/
+%generic-feature-not-selectable
+{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
+%generic-feature-menu-option
+{
+  cursor: pointer;
+}
+
+%generic-feature-no-margin
+{
+  margin: 0px;
+}
+
+%generic-feature-no-padding
+{
+  padding: 0px;
+}
+
+%generic-feature-no-margin-and-padding
+{
+  @extend %generic-feature-no-margin;
+  @extend %generic-feature-no-padding;
+}
+
+%generic-feature-margin-centralise-horizontal
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.default-list
+{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.list-move-to-right-end
+{
+  justify-content: flex-end;
+}
+
+.default-list li
+{
+  list-style: none;
+}
+
+.overlay-area-gray
+{
+  background-color: $overlay-section-color-1;
+
+}

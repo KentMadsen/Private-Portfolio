@@ -1,0 +1,117 @@
+/*
+
+*/
+.misc a
+{
+  color: $link-color;
+  font-family: $menu-and-link-font;
+  text-decoration: none;
+}
+
+.misc a:hover
+{
+    color: $link-color-activated;
+}
+
+.misc ul
+{
+  display: flex;
+  list-style: none;
+
+
+  @extend %generic-feature-no-margin-and-padding;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+
+  justify-content: center;
+
+  font-size: 12px;
+}
+
+.misc ul li
+{
+  @extend %generic-feature-no-margin;
+
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.misc p
+{
+  @extend %generic-feature-no-margin-and-padding;
+
+  color: $link-color;
+  font-family: $menu-and-link-font;
+}
+
+footer ul
+{
+    @extend %generic-feature-no-margin-and-padding;
+
+}
+
+.bag-of-words
+{
+
+}
+
+.bag-of-words p
+{
+  color: white;
+
+  text-align: center;
+  font-family: $menu-and-link-font;
+}
+
+.bag-of-words ul 
+{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  list-style-type: point;
+
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+}
+
+.bag-of-words ul li
+{
+  color:$link-color;  
+  
+  list-style-type: circle;
+  
+  margin: 0px;
+  padding: 0px;
+
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.bag-of-words ul li:hover 
+{
+  color:$link-color-activated;
+
+}
+
+.bag-of-words ul li a
+{
+  text-decoration: none;
+  font-family: $menu-and-link-font;
+  
+  color: $link-color;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.bag-of-words ul li a:hover
+{
+  
+  color: $link-color-activated;
+
+}
