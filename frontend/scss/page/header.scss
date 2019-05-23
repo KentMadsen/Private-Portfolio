@@ -35,8 +35,7 @@ header p
 
 header ul
 {
-  padding: 0px;
-  margin: 0px;
+  @extend %generic-feature-no-margin;
 
 }
 
@@ -54,8 +53,7 @@ header ul
 {
   font-size: $menu-and-link-font;
 
-  margin: 0px;
-  padding: 0px;
+  @extend %generic-feature-no-margin;
 }
 
 .nav-header-menu a
@@ -82,11 +80,6 @@ header ul
 {
   display: flex;
 
-}
-
-.end
-{
-  justify-content: flex-end;
 }
 
 .nav-header-menu li

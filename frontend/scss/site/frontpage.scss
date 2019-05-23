@@ -10,17 +10,16 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 0px;
+  @extend %generic-feature-no-margin-and-padding;
 
-  margin: 0px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
 #frontpage-filter-area ul li
 {
-  @extend %not-selectable;
-  @extend %menu-option;
+  @extend %generic-feature-not-selectable;
+  @extend %generic-feature-menu-option;
 
   list-style: none;
 
@@ -48,18 +47,13 @@
 
 #frontpage-filter-area ul li p
 {
-    margin: 0px;
-    font-family: $menu-and-link-font;
-    text-transform: uppercase;
-    color: $link-color;
+  @extend %generic-feature-no-margin;
+
+  font-family: $menu-and-link-font;
+  text-transform: uppercase;
+
+  color: $link-color;
 }
-
-.activated-menu-option p
-{
-  color: $background-color !important;
-}
-
-
 
 /*
 */
@@ -68,4 +62,91 @@
 
 
   width: 100%;
+}
+
+.card-container
+{
+  height: 380px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.card
+{
+  display: inline-grid;
+}
+
+.card-link
+{
+  position: relative;
+
+}
+
+.card:nth-child( 1 )
+{
+  background-color: gray;
+}
+
+.card:nth-child( 2 )
+{
+  background-color: white;
+}
+
+.card:nth-child( 3 )
+{
+  background-color: gray;
+}
+
+.card:nth-child( 4 )
+{
+  background-color: white;
+}
+
+.card
+{
+
+}
+
+.card-image-container
+{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.card-button-read-more
+{
+  color: rgba(0,0,0, 1.0);
+  position: absolute;
+  border: 1px solid $link-color;
+
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-button-read-more p
+{
+  @extend %generic-feature-no-margin-and-padding;
+
+  color:$link-color;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  font-weight: bold;
+
+  font-family: $menu-and-link-font;
+  font-size: 24px;
+
+  text-align: center;
+
+
+
 }

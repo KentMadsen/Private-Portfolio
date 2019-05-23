@@ -29,9 +29,8 @@ body
 {
   width: 1420px;
 
-  margin: 0px;
-  margin-right: auto;
-  margin-left: auto;
+  @extend %generic-feature-no-margin;
+  @extend %generic-feature-margin-centralise-horizontal;
 
   padding: 0px;
 }
