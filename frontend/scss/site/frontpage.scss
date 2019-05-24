@@ -37,18 +37,13 @@
 #showcase-filter-area ul li:hover
 {
   border:1px solid $link-color-activated;
-}
-
-#showcase-filter-area ul li:hover p
-{
+  
   color: $link-color-activated;
 }
 
-
-#showcase-filter-area ul li p
+#showcase-filter-area ul li 
 {
-  @extend %generic-feature-no-margin;
-
+  
   font-family: $menu-and-link-font;
   text-transform: uppercase;
 
