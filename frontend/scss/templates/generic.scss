@@ -53,8 +53,12 @@
   list-style: none;
 }
 
-.overlay-area-gray
+.overlay-area-dark-blue
 {
   background-color: $overlay-section-color-1;
+}
 
+.overlay-area-gray
+{
+  background-color: $overlay-section-color-3; 
 }

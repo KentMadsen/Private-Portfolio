@@ -69,7 +69,14 @@ footer ul
 {
   
   display: flex;
+
   flex-wrap: wrap;
+  flex-flow: row wrap;
+
+  width: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
   
   justify-content: center;
   
@@ -86,11 +93,12 @@ footer ul
   
   list-style-type: circle;
   
+  
   margin: 0px;
   padding: 0px;
 
-  margin-left: 16px;
-  margin-right: 8px;
+  margin-left: 38px;
+  margin-right: 24px;
 }
 
 .bag-of-words ul li:hover 
