@@ -1,11 +1,11 @@
 /*
 */
-#frontpage-filter-area
+#showcase-filter-area
 {
 
 }
 
-#frontpage-filter-area ul
+#showcase-filter-area ul
 {
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@
   margin-bottom: 16px;
 }
 
-#frontpage-filter-area ul li
+#showcase-filter-area ul li
 {
   @extend %generic-feature-not-selectable;
   @extend %generic-feature-menu-option;
@@ -34,18 +34,18 @@
   font-weight: bold;
 }
 
-#frontpage-filter-area ul li:hover
+#showcase-filter-area ul li:hover
 {
   border:1px solid $link-color-activated;
 }
 
-#frontpage-filter-area ul li:hover p
+#showcase-filter-area ul li:hover p
 {
   color: $link-color-activated;
 }
 
 
-#frontpage-filter-area ul li p
+#showcase-filter-area ul li p
 {
   @extend %generic-feature-no-margin;
 
