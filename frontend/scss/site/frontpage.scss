@@ -90,6 +90,14 @@
 
 }
 
+
+.card a:hover .card-more
+{
+  color:white;
+  background-color: $link-color-activated;
+
+}
+
 .card-link
 {
   position: relative;
@@ -119,21 +127,28 @@
 
 .card-more 
 {
-  width: 24px;
-  height: 24px;
+  position: relative;
+
+  width: 50px;
+  height: 50px;
   
   margin-right: 0px;
   margin-left: auto;
 
-  border: 1px solid black;
+  margin-top: 24px;
   
-  color: black;
+  color: $link-color;
 }
 
 .card-more i
 {
   text-align: center;
   font-size: 24px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .card-summary
