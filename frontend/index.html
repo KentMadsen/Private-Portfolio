@@ -1,4 +1,5 @@
 <!-- https://github.com/KentMadsen/EASV-Portfolio -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -324,28 +325,17 @@
 
           </main>
 
-          <footer class="overlay-area-gray">
+          <footer id="footer-navigation" 
+                  class="overlay-area-gray">
             <div class="bag-of-words">
               <p>
                 Browse all keywords
               </p> 
 
               <ul> 
-                <li>
-                  <a href="#" hreflang="" title=""> 
-                      CSS
-                  </a>
-                </li>
-                
-                <li>
-                  <a href="#" hreflang="" title=""> 
-                      HTML
-                  </a>
-                </li>
-                
-                <li>
-                  <a href="#" hreflang="" title=""> 
-                      Web development
+                <li v-for="item in listed_tags">
+                  <a href="#">
+                      {{ item.tags }}
                   </a>
                 </li>
                 
