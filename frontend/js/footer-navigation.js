@@ -39,7 +39,48 @@ var footer_app = new Vue(
         {
           tags:'Web design',
           links:'#'
+        },
+
+        {
+          tags:'Programming',
+          links:'#'
+        },
+
+        {
+          tags:'Security',
+          links:'#'
+        },
+
+        {
+          tags:'PHP',
+          links:'#'
+        },
+
+        {
+          tags:'SQL',
+          links:'#'
+        },
+
+        {
+          tags:'Databases',
+          links:'#'
+        },
+
+        {
+          tags:'Testing',
+          links:'#'
+        },
+
+        {
+          tags:'Git',
+          links:'#'
+        },
+
+        {
+          tags:'Java',
+          links:'#'
         }
+
       ]
 
 
