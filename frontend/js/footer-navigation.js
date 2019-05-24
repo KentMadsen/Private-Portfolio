@@ -62,7 +62,7 @@ var footer_app = new Vue(
         },
 
         {
-          tags:'Databases',
+          tags:'Database',
           links:'#'
         },
 
@@ -78,6 +78,31 @@ var footer_app = new Vue(
 
         {
           tags:'Java',
+          links:'#'
+        },
+
+        {
+          tags:'JUnit',
+          links:'#'
+        },
+
+        {
+          tags:'Mysql',
+          links:'#'
+        },
+
+        {
+          tags:'Microsoft Access',
+          links:'#'
+        },
+
+        {
+          tags:'Graphics',
+          links:'#'
+        },
+
+        {
+          tags:'Microsoft Access',
           links:'#'
         }
 

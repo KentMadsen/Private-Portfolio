@@ -164,7 +164,9 @@
             </section>
 
             <section>
-              <div class="boundary">
+              <div id="showcase-projects" 
+                   class="boundary">
+
                 <div>
                   <!-- Title -->
                   <p class="section-name">
@@ -176,48 +178,45 @@
                   </p>
 
                   <!-- Filter -->
-                  <div id="frontpage-filter-area">
+                  <div id="showcase-filter-area">
                     <ul>
-                      <li class="activated-menu-option">
-                        <p>
-                          All
-                        </p>
-                      </li>
+                      <!--  -->
+                      <template v-for="item in projects.keywords">
+                          <li v-if='item.isActive' class="activated-menu-option">
+                              <p hidden>
+                                {{
+                                  item.category
+                                }}
+                              </p>
+                              <p>
+                                {{ item.tags }}
+                              </p>
+                            </li>
 
-                      <li>
-                        <p>
-                          HTML
-                        </p>
-                      </li>
-
-                      <li>
-                        <p>
-                          JavaScript
-                        </p>
-                      </li>
-
-                      <li>
-                        <p>
-                          CSS
-                        </p>
-                      </li>
-
-                      <li>
-                          <p>
-                            Sass
-                          </p>
-                      </li>
+                            <li v-else>
+                                <p hidden>
+                                  {{
+                                    item.category
+                                  }}
+                                </p>
+                                <p>
+                                  {{ item.tags }}
+                                </p>
+                            </li>
+                      </template>
                     </ul>
                   </div>
 
                   <!-- Project -->
-                  <div id="frontpage-project-area">
+                  <div class="showcase-area">
 
                     <!-- -->
                     <div class="card-container">
 
                       <div class="card">
-                        <a href="" hreflang="" title="">
+                        <a href="" 
+                           hreflang="" 
+                           title="">
                           <div>
                               <p class="card-registered">
                                 6 days ago
@@ -245,8 +244,8 @@
 
                       <div class="card">
                           <a href="#" 
-                          hreflang="" 
-                          title=""> 
+                             hreflang="" 
+                             title=""> 
                         
                           <div>
                               <p class="card-registered">
@@ -466,6 +465,9 @@
       </script>
 
       <script src=".\\js\\footer-navigation.js">
+      </script>
+
+      <script src=".\\js\\show-case-projects.js">
       </script>
     </body>
 </html>
