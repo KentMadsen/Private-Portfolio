@@ -1,0 +1,39 @@
+<template v-for="item in projects.keywords">
+
+        <span v-if="item.isActive" 
+              v-on:click="clickEvenFilterTag( $event )">
+
+            <li class="menu-option activated-menu-option">
+                <p class="menu-option-category" hidden>
+                  {{
+                    item.category
+                  }}
+                </p>
+
+                <p class="menu-option-identity" hidden>
+                  {{ 
+                    item.identity
+                  }}
+                </p>
+
+                  {{ 
+                    item.tags 
+                  }}
+              </li>
+        </span>
+
+        <span v-else v-on:click="clickEvenFilterTag( $event )">
+            <li class="menu-option">
+                <p hidden>
+                  {{
+                    item.category
+                  }}
+                </p>
+                <p hidden>
+                  {{ item.identity }}
+                </p>
+                  {{ item.tags }}
+              </li>
+        </span>
+
+    </template>

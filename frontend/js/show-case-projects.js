@@ -52,7 +52,21 @@ var showcase = new Vue
     {
       clickEvenFilterTag: function ( event )
       {
-        console.log( event );
+        var target = event.target;
+        
+        console.log(target);
+
+        var children = target.childNodes;
+        console.log(children);
+
+        var i = 0;
+
+        for( i = 0; 
+             i < children.length; 
+             i++ )
+        {
+          console.log(children[i]);
+        }
           
 
       }

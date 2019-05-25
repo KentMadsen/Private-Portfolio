@@ -12,7 +12,7 @@
               content="ie=edge">
 
         <title>
-          Designermadsen - Web application
+          Designermadsen - Hi, i am developer
         </title>
 
         <link rel="stylesheet"
@@ -30,11 +30,12 @@
             <div class="boundary">
 
               <nav class="header-navigation">
+
                 <div class="header-navigation-main">
                   <ul class="header-navigation-list default-list">
                     <li class="nav-header-menu">
                       <a href="./index.html"
-                         hreflang=""
+                         hreflang="en"
                          title="Designermadsen">
                         Kent Madsen
                       </a>
@@ -46,12 +47,13 @@
 
                 </div>
 
-                <div class="header-navigation-secondary">
+                <div class="header-navigation-secondary" 
+                     id="menu-navigation">
+
                   <ul class="nav-header-menu list-move-to-right-end">
                     <li>
                       <a href="#"
-                         hreflang=""
-                         title="">
+                         hreflang="en">
                         <p>
                           About me
                         </p>
@@ -60,8 +62,7 @@
 
                     <li>
                       <a href="#"
-                         hreflang=""
-                         title="">
+                         hreflang="en">
                         <p>
                           Contact
                         </p>
@@ -70,8 +71,7 @@
 
                     <li>
                       <a href="#"
-                         hreflang=""
-                         title="">
+                         hreflang="en">
                         <p>
                           Projects
                         </p>
@@ -79,9 +79,8 @@
                     </li>
 
                     <li>
-                      <a href="#"
-                         hreflang=""
-                         title="">
+                      <a href="http://journal.designermadsen.com"
+                         hreflang="en">
                         <p>
                           Journal
                         </p>
@@ -89,6 +88,7 @@
                     </li>
 
                   </ul>
+
                 </div>
               </nav>
 
@@ -152,7 +152,7 @@
                    class="boundary">
 
                 <div>
-                  
+
                   <p class="section-name">
                     Projects
                   </p>
@@ -163,62 +163,13 @@
 
                   <div id="showcase-filter-area">
                     <ul>
-                      
-                      <template v-for="item in projects.keywords">
-
-                          <span v-if="item.isActive" 
-                                v-on:click="clickEvenFilterTag( $event )">
-
-                              <li class="menu-option activated-menu-option">
-                                  <p hidden>
-                                    {{
-                                      item.category
-                                    }}
-                                  </p>
-    
-                                  <p hidden>
-                                    {{ 
-                                      item.identity
-                                    }}
-                                  </p>
-    
-                                    {{ 
-                                      item.tags 
-                                    }}
-                                </li>
-                          </span>
-
-                          <span v-else v-on:click="clickEvenFilterTag( $event )" 
-                                class="menu-option">
-                              <li>
-                                  <p hidden>
-                                    {{
-                                      item.category
-                                    }}
-                                  </p>
-    
-                                  <p hidden>
-                                    {{ 
-                                      item.identity
-                                    }}
-                                  </p>
-  
-                                    {{ 
-                                      item.tags 
-                                    }}
-                                  
-                                </li>
-                          </span>
-
-                      </template>
-
+                      <!-- Senere -->
                     </ul>
                   </div>
 
                   <!-- Project -->
                   <div>
 
-                    <!-- -->
                     <div class="card-container">
 
                       <div class="card">
@@ -245,7 +196,8 @@
                           </div>
 
                           <div class="card-more">
-                              <i class="fas fa-long-arrow-alt-right"></i>                            
+                              <i class="fas fa-external-link-square-alt">
+                              </i>                            
                           </div>
                       </a>
 
@@ -275,7 +227,9 @@
                               </p>
                           </div>
                           <div class="card-more">
-                              <i class="fas fa-long-arrow-alt-right"></i>                            
+                              <i class="fas fa-external-link-square-alt">
+
+                              </i>                            
                           </div>
                         </a>
   
@@ -305,7 +259,9 @@
                                 </p>
                               </div>
                               <div class="card-more">
-                                  <i class="fas fa-long-arrow-alt-right"></i>                            
+                                  <i class="fas fa-external-link-square-alt">
+                                    
+                                  </i>                     
                               </div>
                               
                             </div>
@@ -328,6 +284,20 @@
 
               </div>
               
+            </section>
+
+            <section class="overlay-area-dark-blue">
+                <div class="boundary">
+                  
+  
+                </div>
+              </section>
+
+            <section class="overlay-area-gray">
+              <div class="boundary">
+                
+
+              </div>
             </section>
 
           </main>
