@@ -12,7 +12,7 @@
               content="ie=edge">
 
         <title>
-          Designermadsen - Hi, i am developer
+          Designermadsen - Hi, i am coder
         </title>
 
         <link rel="stylesheet"
@@ -23,22 +23,28 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" 
               rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">  
     </head>
 
     <body>
-          <header>
+          <header id="menu-navigation">
             <div class="boundary">
 
               <nav class="header-navigation">
 
                 <div class="header-navigation-main">
                   <ul class="header-navigation-list default-list">
+                    
                     <li class="nav-header-menu">
                       <a href="./index.html"
                          hreflang="en"
                          title="Designermadsen">
                         Kent Madsen
                       </a>
+                    
                     </li>
                   </ul>
                 </div>
@@ -51,41 +57,23 @@
                      id="menu-navigation">
 
                   <ul class="nav-header-menu list-move-to-right-end">
-                    <li>
-                      <a href="#"
-                         hreflang="en">
-                        <p>
-                          About me
-                        </p>
-                      </a>
-                    </li>
 
-                    <li>
-                      <a href="#"
-                         hreflang="en">
-                        <p>
-                          Contact
-                        </p>
-                      </a>
-                    </li>
+                    <template  v-for="item in linkNavigation">
 
-                    <li>
-                      <a href="#"
-                         hreflang="en">
-                        <p>
-                          Projects
-                        </p>
-                      </a>
-                    </li>
+                        <li>
+                          <a v-bind:href="item.url" 
+                             v-bind:hreflang="item.language">
+                             
+                            <p>
+                              {{
+                                item.name
+                              }}
+                            </p>
 
-                    <li>
-                      <a href="http://journal.designermadsen.com"
-                         hreflang="en">
-                        <p>
-                          Journal
-                        </p>
-                      </a>
-                    </li>
+                          </a>
+                        </li>
+
+                      </template>
 
                   </ul>
 
@@ -100,7 +88,9 @@
             <section>
               <div class="boundary">
                 <div class="frontpage">
-
+                  <p class="frontpage-title">
+                    Hi, I am a coder
+                  </p>
                 </div>
               </div>
             </section>
@@ -108,7 +98,7 @@
             <section class="overlay-area-gray">
               <div class="boundary">
                 <p class="section-name">
-                  Placerholder
+                  Competences
                 </p>
 
                 <div class="four-elements-container">
@@ -157,7 +147,7 @@
                     Projects
                   </p>
 
-                  <p class="section-option-description">
+                  <p class="section-option-description" hidden>
                       Tools
                   </p>
 
@@ -166,6 +156,8 @@
                       <!-- Senere -->
                     </ul>
                   </div>
+
+
 
                   <!-- Project -->
                   <div>
@@ -177,15 +169,15 @@
                            hreflang="en" 
                            title="">
                           <div>
-                              <p class="card-registered">
+                              <p class="card-registered disable-select">
                                 6 days ago
                               </p>
         
-                              <p class="card-title">
+                              <p class="card-title disable-select">
                                 Lorem Ipsum
                               </p>
         
-                              <p class="card-summary">
+                              <p class="card-summary disable-select">
                                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
                                 nisi ipsum venenatis turpis, a dictum velit odio sed augue.
                                 Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
@@ -200,56 +192,22 @@
                               </i>                            
                           </div>
                       </a>
-
                       </div>
 
                       <div class="card">
                           <a href="#" 
-                             hreflang="" 
-                             title=""> 
-                        
-                          <div>
-                              <p class="card-registered">
-                                6 days ago
-                              </p>
-        
-                              <p class="card-title">
-                                Lorem Ipsum
-                              </p>
-        
-                              <p class="card-summary">
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
-                                Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
-                                et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                                per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
-                              </p>
-                          </div>
-                          <div class="card-more">
-                              <i class="fas fa-external-link-square-alt">
-
-                              </i>                            
-                          </div>
-                        </a>
-  
-                        </div>
-
-                        <div class="card">
-                          <a href="#" 
-                             hreflang="" 
-                             title=""> 
-
+                             hreflang="en" 
+                             title="">
                             <div>
-                              <p class="card-registered">
-                                6 days ago
+                                <p class="card-registered disable-select">
+                                  6 days ago
                                 </p>
-                                
-                                <p class="card-title">
+          
+                                <p class="card-title disable-select">
                                   Lorem Ipsum
                                 </p>
-                                
-                                <p class="card-summary">
+          
+                                <p class="card-summary disable-select">
                                   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
                                   nisi ipsum venenatis turpis, a dictum velit odio sed augue.
                                   Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
@@ -257,19 +215,57 @@
                                   et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
                                   per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
                                 </p>
+                            </div>
+  
+                            <div class="card-more">
+                                <i class="fas fa-external-link-square-alt">
+                                </i>                            
+                            </div>
+                        </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="#" 
+                               hreflang="en" 
+                               title="">
+                              <div>
+                                  <p class="card-registered disable-select">
+                                    6 days ago
+                                  </p>
+            
+                                  <p class="card-title disable-select">
+                                    Lorem Ipsum
+                                  </p>
+            
+                                  <p class="card-summary disable-select">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
+                                    nisi ipsum venenatis turpis, a dictum velit odio sed augue.
+                                    Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
+                                    Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
+                                    et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                                    per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
+                                  </p>
                               </div>
+    
                               <div class="card-more">
                                   <i class="fas fa-external-link-square-alt">
-                                    
-                                  </i>                     
+                                  </i>                            
                               </div>
-                              
-                            </div>
-
                           </a>
+                          </div>
+                      
+                      
+
                     </div>
 
-                    <div class="section-more">
+                  </div>
+
+
+
+
+
+
+                  <div class="section-more">
                       <a href="#" 
                          hreflang="en">
                         <p>
@@ -277,8 +273,6 @@
                         </p>
                       </a>
                     </div>
-
-                  </div>
 
                 </div>
 

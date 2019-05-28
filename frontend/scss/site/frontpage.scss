@@ -84,7 +84,6 @@
 
 }
 
-
 .card a:hover .card-more
 {
   color:white;
@@ -99,15 +98,12 @@
 }
 
 .card p 
-{
-  margin-top: 8px;
-  margin-bottom: 8px;
-  
+{ 
   margin-right: 24px;
   margin-left: 24px;
+  
 
   font-family: $menu-and-link-font;
-  color: black;
 }
 
 .card a 
@@ -119,6 +115,36 @@
 {
   font-size:28px;
   font-weight: bold;
+
+  margin: 0px;
+  
+  margin-top: 8px;
+  margin-bottom: 22px;
+  color: black;
+
+  font-family: 'Merriweather' !important;
+}
+
+.card-registered
+{
+  margin: 0px;
+  
+  margin-top: 16px;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+
+  
+  color: $link-color;
+}
+
+.card-summary
+{
+  font-size: 16px;
+  margin: 0px;
+  margin-top: 8px;
+  margin-bottom: 20.8px;
+  color: black;
 }
 
 .card-more 
@@ -131,7 +157,7 @@
   margin-right: 0px;
   margin-left: auto;
 
-  margin-top: 24px;
+  margin-top: 32px;
   
   color: $link-color;
 }
@@ -149,9 +175,11 @@
 
 .card-summary
 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 200px;
+
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-image-container
@@ -175,6 +203,22 @@
 
 }
 
+.frontpage 
+{
+  position: relative;
+}
+
+.frontpage-title
+{
+  position: absolute;
+  margin: 0px;
+
+  bottom: 64px;
+  left: 64px;
+
+  font-size: 42px;
+  font-family: 'Merriweather';
+}
 
 .section-more a
 {

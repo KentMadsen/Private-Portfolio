@@ -51,41 +51,22 @@
                      id="menu-navigation">
 
                   <ul class="nav-header-menu list-move-to-right-end">
-                    <li>
-                      <a href="#"
-                         hreflang="en">
-                        <p>
-                          About me
-                        </p>
-                      </a>
-                    </li>
+                      <template  v-for="item in linkNavigation">
 
-                    <li>
-                      <a href="#"
-                         hreflang="en">
-                        <p>
-                          Contact
-                        </p>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#"
-                         hreflang="en">
-                        <p>
-                          Projects
-                        </p>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="http://journal.designermadsen.com"
-                         hreflang="en">
-                        <p>
-                          Journal
-                        </p>
-                      </a>
-                    </li>
+                          <li>
+                            <a v-bind:href="item.url" 
+                               v-bind:hreflang="item.language">
+                               
+                              <p>
+                                {{
+                                  item.name
+                                }}
+                              </p>
+  
+                            </a>
+                          </li>
+  
+                        </template>
 
                   </ul>
 
