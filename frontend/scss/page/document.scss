@@ -54,6 +54,12 @@ section:last-child
   margin-bottom: 12px;
 }
 
+.section-name-overlay
+{
+  @extend .section-name;
+  color: white;
+}
+
 .section-option-description
 {
   text-align: center;
