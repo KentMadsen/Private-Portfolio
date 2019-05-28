@@ -31,7 +31,7 @@ section:last-child
   border:1px solid rgba($color: #111111, $alpha: 0.0) !important;
 }
 
-.activated-menu-option p
+.activated-menu-option
 {
     color: white !important;
 }
@@ -63,4 +63,12 @@ section:last-child
   margin-bottom: 4px;
 
   font-size: 14px;
+}
+
+.disable-select
+{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */    
 }
