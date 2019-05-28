@@ -38,14 +38,16 @@
                 <div class="header-navigation-main">
                   <ul class="header-navigation-list default-list">
                     
-                    <li class="nav-header-menu">
-                      <a href="./index.html"
-                         hreflang="en"
-                         title="Designermadsen">
-                        Kent Madsen
-                      </a>
-                    
-                    </li>
+                    <template v-for="item in mainNavigation">
+                      <li class="nav-header-menu">
+                        <a  v-bind:href="item.url" 
+                            v-bind:hreflang="item.language">
+                            {{
+                              item.name
+                            }}
+                        </a>
+                      </li>
+                    </template>
                   </ul>
                 </div>
 
@@ -63,7 +65,7 @@
                         <li>
                           <a v-bind:href="item.url" 
                              v-bind:hreflang="item.language">
-                             
+
                             <p>
                               {{
                                 item.name

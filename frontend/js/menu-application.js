@@ -6,6 +6,11 @@ var menu = new Vue(
     {
       mainNavigation:
       [
+        {
+          url:"./index.html",
+          name:"Kent Madsen",
+          language:"en"
+        }
 
       ],
       linkNavigation:
