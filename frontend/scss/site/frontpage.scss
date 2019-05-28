@@ -80,13 +80,18 @@
   
   margin-top: 32px;
   margin-bottom: 32px;
+
+}
+
+.card a 
+{
+  
 }
 
 .card a:hover
 {
   background-color: white;
   box-shadow: 5px 5px 40px rgba(0,0,0, 0.15);
-
 }
 
 .card a:hover .card-more
@@ -205,6 +210,16 @@
   margin-bottom: 16px;
 
   border-bottom:1px solid rgba($link-color-activated, 100%);
+
+}
+
+.split-container
+{
+  width: 100%;
+
+  display:grid;
+  grid-gap: 32px;
+  grid-template-columns: 1fr 1fr;
 
 }
 
