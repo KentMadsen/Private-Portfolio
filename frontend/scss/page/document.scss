@@ -3,7 +3,7 @@
 */
 main
 {
-
+  padding-top:60px;
 
 }
 
@@ -52,6 +52,12 @@ section:last-child
   text-align: center;
 
   margin-bottom: 12px;
+}
+
+.section-name-overlay
+{
+  @extend .section-name;
+  color: white;
 }
 
 .section-option-description
