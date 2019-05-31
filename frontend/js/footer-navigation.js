@@ -58,116 +58,19 @@ var footer_app = new Vue(
         }
       ],
 
-      listed_tags:
-      [
+      /* 
         {
           tags:'HTML',
           name:'',
           acronym:'',
           links:'#'
         },
+    
+      */
 
-        {
-          tags:'CSS',
-          name:'',
-          acronym:'',
-          links:'#'
-        },
+      listed_tags:
+      [
 
-        {
-          tags:'Sass',
-          links:'#'
-        },
-
-        {
-          tags:'Javascript',
-          links:'#'
-        },
-
-        {
-          tags:'User experience',
-          links:'#'
-        },
-
-        {
-          tags:'Analytics',
-          links:'#'
-        },
-
-        {
-          tags:'Web design',
-          links:'#'
-        },
-
-        {
-          tags:'Programming',
-          links:'#'
-        },
-
-        {
-          tags:'Security',
-          links:'#'
-        },
-
-        {
-          tags:'PHP',
-          links:'#'
-        },
-
-        {
-          tags:'SQL',
-          links:'#'
-        },
-
-        {
-          tags:'Database',
-          links:'#'
-        },
-
-        {
-          tags:'Testing',
-          links:'#'
-        },
-
-        {
-          tags:'Git',
-          links:'#'
-        },
-
-        {
-          tags:'Java',
-          links:'#'
-        },
-
-        {
-          tags:'JUnit',
-          links:'#'
-        },
-
-        {
-          tags:'Mysql',
-          links:'#'
-        },
-
-        {
-          tags:'Microsoft Access',
-          links:'#'
-        },
-
-        {
-          tags:'Graphics',
-          links:'#'
-        },
-
-        {
-          tags:'Design',
-          links:'#'
-        },
-
-        {
-          tags:'Development',
-          links:'#'
-        }
       ],
 
       misc:

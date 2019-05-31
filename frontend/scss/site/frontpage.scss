@@ -233,11 +233,13 @@
   position: absolute;
   margin: 0px;
 
-  bottom: 64px;
-  left: 64px;
+  bottom: 132px;
+  left: 162px;
 
   font-size: 42px;
   font-family: 'Merriweather';
+
+  transform:rotate(62deg)
 }
 
 .section-more a
