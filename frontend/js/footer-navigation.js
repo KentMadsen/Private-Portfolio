@@ -1,3 +1,57 @@
+var buffer_json = null;
+
+function createTag( entity )
+{
+  console.log(entity);
+
+
+  var entity_result = new EntityTag();
+
+  entity_result.setLinks( entity.link );
+  entity_result.setTag( entity.name );
+  entity_result.setName( entity.slug );
+
+  return entity_result;
+}
+
+function EntityTag()
+{
+  this.tag = '';
+  this.name = '';
+  this.link = '';
+
+  this.getTag = function()
+  {
+    return this.tag;
+  };
+
+  
+  this.getName = function()
+  {
+    return this.name;
+  };
+
+  this.getLink = function()
+  {
+    return this.link;
+  };
+
+  this.setTag = function( tag_value )
+  {
+    this.tag = tag_value;
+  }
+
+  this.setName = function( name_value )
+  {
+    this.name = name_value;
+  }
+
+  this.setLinks = function( links_value )
+  {
+    this.link= links_value;
+  }
+
+}
 
 var footer_app = new Vue(
   {
@@ -5,6 +59,8 @@ var footer_app = new Vue(
 
     data:
     {
+      fetched_post_data: null,
+      
       social_navigation:
       [
         {
@@ -58,19 +114,9 @@ var footer_app = new Vue(
         }
       ],
 
-      /* 
-        {
-          tags:'HTML',
-          name:'',
-          acronym:'',
-          links:'#'
-        },
-    
-      */
-
       listed_tags:
       [
-
+        
       ],
 
       misc:
@@ -102,6 +148,11 @@ var footer_app = new Vue(
           content:'Contact',
           link:'#',
           type:1
+        },
+        {
+          content:'Backend Login',
+          link:'https://journal.designermadsen.com/wp-login.php',
+          type:1
         }
           
       ]
@@ -114,8 +165,33 @@ var footer_app = new Vue(
     },
     methods:
     {
+      parse_tags : function( code )
+      {
+        var i = 0;
+
+        var arr = [  ];
+
+        for( i =0; 
+             i < code.data.length; 
+             i++)
+        {
+          var obj = createTag( code.data[i] );
+          arr.push(obj);
+        }
+
+        
+        this.listed_tags = arr;
+      }
+
+      
 
 
+    },
+    mounted: function()
+    {
+      axios
+      .get('https://journal.designermadsen.com/wp-json/wp/v2/tags')
+      .then( Response => ( this.parse_tags( Response )  ) );
     }
   }
 );

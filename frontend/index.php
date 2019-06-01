@@ -27,64 +27,15 @@
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"> 
+        </script>
     </head>
 
     <body>
-          <header id="menu-navigation" class="overlay-area-dark-blue">
-            <div class="boundary">
-
-              <nav class="header-navigation">
-
-                <div class="header-navigation-main">
-                  <ul class="header-navigation-list default-list">
-                    
-                    <template v-for="item in mainNavigation">
-                      <li class="nav-header-menu">
-                        <a  v-bind:href="item.url" 
-                            v-bind:hreflang="item.language">
-                            {{
-                              item.name
-                            }}
-                        </a>
-                      </li>
-                    </template>
-                  </ul>
-                </div>
-
-                <div class="header-navigation-empty">
-
-                </div>
-
-                <div class="header-navigation-secondary" 
-                     id="menu-navigation">
-
-                  <ul class="nav-header-menu list-move-to-right-end">
-
-                    <template  v-for="item in linkNavigation">
-
-                        <li>
-                          <a v-bind:href="item.url" 
-                             v-bind:hreflang="item.language">
-
-                            <p>
-                              {{
-                                item.name
-                              }}
-                            </p>
-
-                          </a>
-                        </li>
-
-                      </template>
-
-                  </ul>
-
-                </div>
-              </nav>
-
-            </div>
-
-          </header>
+      <?php
+        include_once './content/header.html';
+      ?>
+          
 
           <main>
             <section>
@@ -103,7 +54,7 @@
                   Competences
                 </p>
 
-                <div class="four-elements-container">
+                <div class="three-elements-container">
                   <div class="contain">
                     <p class="key">
                       <span class="bold">
@@ -142,20 +93,6 @@
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
                                 nisi ipsum venenatis turpis, a dictum velit odio sed augue.
                                 
-                    </p>
-                  </div>
-
-                  <div class="contain">
-                    <p class="key">
-                        <span class="bold">
-                        Research
-                        </span>
-
-                      </br>
-                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                  nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                  
-                      
                     </p>
                   </div>
 
@@ -298,104 +235,32 @@
               
             </section>
 
+            <section class="overlay-area-dark-blue">
+              
+              
+              
+            </section>
+
+            <section>
+
+            <div class="section-more-center">
+                      <a href="./projects.html" 
+                         hreflang="en">
+                        <p>
+                            See about us
+                        </p>
+                      </a>
+                    </div>
+
+                </div>
+
+            </section>
+
           </main>
 
-          <footer id="footer-navigation" 
-                  class="overlay-area-dark-blue">
-
-            <!-- -->
-            <div>
-
-            </div>
-
-            <div class="bag-of-words">
-              <p>
-                Browse all keywords
-              </p> 
-
-              <ul> 
-                <li v-for="item in listed_tags">
-                  <a v-bind:href="item.links">
-                      {{ item.tags }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div> 
-              <ul class="social-menu">
-                <template v-for="item in social_navigation">
-                  
-                  <!-- social-facebook -->
-                    <li>
-                      <a v-bind:href="item.link" 
-                         v-bind:hreflang="item.language"
-                         @:click="clickEvenFilterTag()">
-
-                         <template>
-                            <i class="fab fa-facebook" 
-                               v-if="item.source === 1">
-                            </i>
-
-                            <i class="fab fa-twitter" 
-                               v-else-if="item.source === 2">
-                            </i>
-                            
-                            <i class="fab fa-behance" 
-                               v-else-if="item.source === 3">
-                            </i>
-
-                            <i class="fab fa-medium" 
-                               v-else-if="item.source === 4">
-                            </i>
-
-                            <i class="fab fa-linkedin" 
-                               v-else-if="item.source === 5">
-                            </i>
-
-                            <i class="fab fa-deviantart" 
-                               v-else-if="item.source === 6">
-                            </i>
-
-                            <i class="fab fa-github" 
-                               v-else-if="item.source === 7">
-                            </i>
-
-                            <i class="fab fa-question" v-else >
-                            </i>
-                         </template> 
-                      </a>
-
-                    </li>
-                </template>
-        
-
-              </ul>
-            </div>
-
-            <div class="boundary misc">
-              <ul>
-                <template v-for="item in misc">
-                  <li v-if="item.type === 0">
-                    <p>
-                      {{
-                        item.content
-                      }}
-                    </p>
-                  </li>
-
-                  <li v-else-if="item.type === 1">
-                    <a v-bind:href="item.link">
-                      {{
-                        item.content
-                      }}
-                    </a>
-                  </li>
-
-                </template>
-              </ul>
-            </div>
-          </footer>
+      <?php 
+      include_once './content/footer.html';
+      ?>
 
       <!-- Frameworks -->
       <script src=".\\install\\framework\\vue.js">

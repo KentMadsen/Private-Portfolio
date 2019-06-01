@@ -50,7 +50,7 @@ body
 
 
 
-.four-elements-container
+.three-elements-container
 {
   display: grid;
 
@@ -58,11 +58,11 @@ body
   min-height: 200px;
 
   grid-gap: 32px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
-.four-elements-container .contain
+.three-elements-container .contain
 {
 
 }

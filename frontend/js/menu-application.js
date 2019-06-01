@@ -7,7 +7,7 @@ var menu = new Vue(
       mainNavigation:
       [
         {
-          url:"./index.html",
+          url:"./index.php",
           name:"Kent Madsen",
           language:"en"
         }
@@ -16,25 +16,25 @@ var menu = new Vue(
       linkNavigation:
       [
         {
-          url:"./about.html",
+          url:"./about.php",
           name:"About",
           language:"en"
         },
         {
-          url:"./contact.html",
+          url:"./contact.php",
           name:"Contact",
           language:"en"
         },
         {
-          url:"./projects.html",
+          url:"./projects.php",
           name:"Projects",
           language:"en"
         },
         {
-          url:"http://journal.designermadsen.com",
-          name:"Journal",
+          url:"./gallery.php",
+          name:"Gallery",
           language:"en"
-        }
+        },
 
       ]
       
