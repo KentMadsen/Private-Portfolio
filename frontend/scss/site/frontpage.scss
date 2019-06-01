@@ -267,6 +267,33 @@
   color:$link-color-activated;
 }
 
+//
+.section-more-center a
+{
+  text-decoration: none;
+  color:$link-color;
+  
+}
+
+.section-more-center a p 
+{
+  font-family: $menu-and-link-font;
+
+  text-transform: uppercase;
+  
+  margin: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  text-align: center;
+}
+
+.section-more-center:hover a
+{
+  color:$link-color-activated;
+}
+//
+
 .card-button-read-more
 {
   color: rgba(0,0,0, 1.0);
