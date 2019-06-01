@@ -14,7 +14,7 @@ body
   display: grid;
 
   grid-template-rows: auto auto auto;
-  grid-gap: 8px;
+  grid-gap: 0px;
 
   margin: 0px;
   padding: 0px;
@@ -23,6 +23,7 @@ body
 
   background-color: $background-color;
 }
+
 
 
 .boundary
@@ -49,7 +50,7 @@ body
 
 
 
-.four-elements-container
+.three-elements-container
 {
   display: grid;
 
@@ -57,11 +58,11 @@ body
   min-height: 200px;
 
   grid-gap: 32px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
-.four-elements-container .contain
+.three-elements-container .contain
 {
 
 }

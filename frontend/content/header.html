@@ -1,0 +1,55 @@
+<header id="menu-navigation" class="overlay-area-dark-blue">
+    <div class="boundary">
+
+      <nav class="header-navigation">
+
+        <div class="header-navigation-main">
+          <ul class="header-navigation-list default-list">
+            
+            <template v-for="item in mainNavigation">
+              <li class="nav-header-menu">
+                <a  v-bind:href="item.url" 
+                    v-bind:hreflang="item.language">
+                    {{
+                      item.name
+                    }}
+                </a>
+              </li>
+            </template>
+          </ul>
+        </div>
+
+        <div class="header-navigation-empty">
+
+        </div>
+
+        <div class="header-navigation-secondary" 
+             id="menu-navigation">
+
+          <ul class="nav-header-menu list-move-to-right-end">
+
+            <template  v-for="item in linkNavigation">
+
+                <li>
+                  <a v-bind:href="item.url" 
+                     v-bind:hreflang="item.language">
+
+                    <p>
+                      {{
+                        item.name
+                      }}
+                    </p>
+
+                  </a>
+                </li>
+
+              </template>
+
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
