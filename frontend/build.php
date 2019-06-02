@@ -24,7 +24,7 @@
     </head>
 
     <body>
-    <?php
+      <?php
         include_once './content/header.html';
       ?>
 
@@ -34,18 +34,8 @@
 
       <?php
         include_once './content/footer.html';
+        include_once './content/content.html';
       ?>
-
-
-      <?php
-          include_once './content/content.html';
-      ?>
-
-       <!--  -->
-       <link rel="stylesheet"
-              href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-              crossorigin="anonymous">
 
     </body>
 </html>

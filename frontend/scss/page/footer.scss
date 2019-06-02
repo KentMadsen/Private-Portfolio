@@ -65,21 +65,21 @@ footer ul
   font-family: $menu-and-link-font;
 }
 
-.bag-of-words ul 
+.bag-of-words ul
 {
-  
+
   display: flex;
 
   flex-wrap: wrap;
   flex-flow: row wrap;
 
-  width: 50%;
+  width: 80%;
 
   margin-left: auto;
   margin-right: auto;
-  
+
   justify-content: center;
-  
+
   list-style-type: point;
 
   margin-top: 16px;
@@ -89,11 +89,11 @@ footer ul
 
 .bag-of-words ul li
 {
-  color:$link-color;  
-  
+  color:$link-color;
+
   list-style-type: circle;
-  
-  
+
+
   margin: 0px;
   padding: 0px;
 
@@ -101,7 +101,7 @@ footer ul
   margin-right: 24px;
 }
 
-.bag-of-words ul li:hover 
+.bag-of-words ul li:hover
 {
   color:$link-color-activated;
 
@@ -111,7 +111,7 @@ footer ul
 {
   text-decoration: none;
   font-family: $menu-and-link-font;
-  
+
   color: $link-color;
   margin: 0px;
   padding: 0px;
@@ -120,13 +120,13 @@ footer ul
 
 .bag-of-words ul li a:hover
 {
-  
+
   color: $link-color-activated;
 
 }
 
 
-.bag-of-words ul li a p 
+.bag-of-words ul li a p
 {
   margin: 0px;
   padding: 0px;

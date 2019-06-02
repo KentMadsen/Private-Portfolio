@@ -18,10 +18,10 @@
         <link rel="stylesheet"
               href="./css/style.css">
 
-              <?php
-                include_once './content/font.html';
-              ?>
-              
+        <?php
+          include_once './content/font.html';
+        ?>
+
     </head>
 
     <body>
@@ -54,9 +54,8 @@
                       </span>
 
                     </br>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
-                                nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-
+                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
+                      nisi ipsum venenatis turpis, a dictum velit odio sed augue.
                     </p>
 
                   </div>
@@ -67,10 +66,8 @@
                           User Experience
                         </span>
                       </br>
-
-                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
-                                  nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
+                        nisi ipsum venenatis turpis, a dictum velit odio sed augue.
                     </p>
 
                   </div>
@@ -81,10 +78,8 @@
                         Responsive Design
                       </span>
                     </br>
-
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
-                                nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-
+                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
+                      nisi ipsum venenatis turpis, a dictum velit odio sed augue.
                     </p>
                   </div>
 
@@ -118,24 +113,31 @@
                     <div class="card-container">
 
                         <template v-for="item in listed_post_summaries">
+
                            <div class="card">
-                             <a href="#"
-                                hreflang="en"
-                                title="">
-                               <div>
+                             <a v-bind:href="item.link"
+                                v-bind:hreflang="item.language"
+                                v-bind:title="item.title">
+                               <div class="card-size">
                                  <p class="card-registered disable-select"
                                     v-html="item.registered">
-                                   {{ item.registered }}
+                                   {{
+                                     item.registered
+                                   }}
                                  </p>
 
                                  <p class="card-title disable-select"
                                     v-html="item.title">
-                                   {{ item.title }}
+                                   {{
+                                     item.title
+                                   }}
                                  </p>
 
                                   <p class="card-summary disable-select"
                                      v-html="item.summary">
-                                    {{ item.summary }}
+                                    {{
+                                      item.summary
+                                    }}
                                   </p>
                                </div>
 
@@ -146,6 +148,7 @@
 
                              </a>
                            </div>
+
                         </template>
 
                     </div>
@@ -153,7 +156,7 @@
                   </div>
 
                   <div class="section-more">
-                      <a href="./projects.html"
+                      <a href="./projects.php"
                          hreflang="en">
                         <p>
                             See all projects
@@ -176,7 +179,7 @@
             <section>
 
             <div class="section-more-center">
-                      <a href="./projects.php"
+                      <a href="./about.php"
                          hreflang="en">
                         <p>
                             See about us
@@ -184,25 +187,17 @@
                       </a>
                     </div>
 
-                </div>
+              </div>
 
             </section>
 
         </main>
 
       <?php
-      include_once './content/footer.html';
+        include_once './content/footer.html';
+        include_once './content/content.html';
       ?>
 
-      <?php
-          include_once './content/content.html';
-      ?>
-
-       <!--  -->
-       <link rel="stylesheet"
-             href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-             integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-             crossorigin="anonymous">
 
     </body>
 </html>
