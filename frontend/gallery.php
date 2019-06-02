@@ -18,11 +18,10 @@
         <link rel="stylesheet"
               href="./css/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
-              rel="stylesheet">
+              <?php
+                include_once './content/font.html';
+              ?>
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-              rel="stylesheet">
     </head>
 
     <body>

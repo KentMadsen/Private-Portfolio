@@ -1,6 +1,6 @@
-<!-- https://github.com/KentMadsen/EASV-Portfolio -->
 
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -18,18 +18,10 @@
         <link rel="stylesheet"
               href="./css/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
-              rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-              rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js">
-        </script>
+              <?php
+                include_once './content/font.html';
+              ?>
+              
     </head>
 
     <body>
@@ -120,8 +112,6 @@
                     </ul>
                   </div>
 
-
-
                   <!-- Project -->
                   <div>
 
@@ -204,16 +194,15 @@
       include_once './content/footer.html';
       ?>
 
-
       <?php
           include_once './content/content.html';
       ?>
 
        <!--  -->
        <link rel="stylesheet"
-              href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-              crossorigin="anonymous">
+             href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+             integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+             crossorigin="anonymous">
 
     </body>
 </html>
