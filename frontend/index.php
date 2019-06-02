@@ -18,16 +18,17 @@
         <link rel="stylesheet"
               href="./css/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
               rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" 
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
               rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">  
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js">
         </script>
     </head>
 
@@ -35,7 +36,6 @@
       <?php
         include_once './content/header.html';
       ?>
-          
 
           <main>
             <section>
@@ -62,9 +62,9 @@
                       </span>
 
                     </br>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
                                 nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                
+
                     </p>
 
                   </div>
@@ -76,9 +76,9 @@
                         </span>
                       </br>
 
-                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
+                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
                                   nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                  
+
                     </p>
 
                   </div>
@@ -90,9 +90,9 @@
                       </span>
                     </br>
 
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
                                 nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                
+
                     </p>
                   </div>
 
@@ -101,7 +101,7 @@
             </section>
 
             <section>
-              <div id="showcase-projects" 
+              <div id="showcase-projects"
                    class="boundary">
 
                 <div>
@@ -127,101 +127,43 @@
 
                     <div class="card-container">
 
-                      <div class="card">
-                        <a href="#" 
-                           hreflang="en" 
-                           title="">
-                          <div>
-                              <p class="card-registered disable-select">
-                                6 days ago
-                              </p>
-        
-                              <p class="card-title disable-select">
-                                Lorem Ipsum
-                              </p>
-        
-                              <p class="card-summary disable-select">
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
-                                Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
-                                et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                                per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
-                              </p>
-                          </div>
+                        <template v-for="item in listed_post_summaries">
+                           <div class="card">
+                             <a href="#"
+                                hreflang="en"
+                                title="">
+                               <div>
+                                 <p class="card-registered disable-select"
+                                    v-html="item.registered">
+                                   {{ item.registered }}
+                                 </p>
 
-                          <div class="card-more">
-                              <i class="fas fa-link"></i>                            
-                          </div>
-                      </a>
-                      </div>
+                                 <p class="card-title disable-select"
+                                    v-html="item.title">
+                                   {{ item.title }}
+                                 </p>
 
-                      <div class="card">
-                          <a href="#" 
-                             hreflang="en" 
-                             title="">
-                            <div>
-                                <p class="card-registered disable-select">
-                                  6 days ago
-                                </p>
-          
-                                <p class="card-title disable-select">
-                                  Lorem Ipsum
-                                </p>
-          
-                                <p class="card-summary disable-select">
-                                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                  nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                  Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
-                                  Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
-                                  et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                                  per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
-                                </p>
-                            </div>
-  
-                            <div class="card-more">
-                                <i class="fas fa-link"></i>                          
-                            </div>
-                        </a>
-                        </div>
+                                  <p class="card-summary disable-select"
+                                     v-html="item.summary">
+                                    {{ item.summary }}
+                                  </p>
+                               </div>
 
-                        <div class="card">
-                            <a href="#" 
-                               hreflang="en" 
-                               title="">
-                              <div>
-                                  <p class="card-registered disable-select">
-                                    6 days ago
-                                  </p>
-            
-                                  <p class="card-title disable-select">
-                                    Lorem Ipsum
-                                  </p>
-            
-                                  <p class="card-summary disable-select">
-                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                    nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                    Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
-                                    Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
-                                    et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                                    per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
-                                  </p>
-                              </div>
-    
-                              <div class="card-more">
-                                  <i class="fas fa-link"></i>                         
-                              </div>
-                          </a>
-                          </div>
-                      
-                      
+                               <div class="card-more">
+                                 <i class="fas fa-link">
+                                 </i>
+                               </div>
+
+                             </a>
+                           </div>
+                        </template>
 
                     </div>
 
                   </div>
 
                   <div class="section-more">
-                      <a href="./projects.html" 
+                      <a href="./projects.html"
                          hreflang="en">
                         <p>
                             See all projects
@@ -232,19 +174,19 @@
                 </div>
 
               </div>
-              
+
             </section>
 
             <section class="overlay-area-dark-blue">
-              
-              
-              
+
+
+
             </section>
 
             <section>
 
             <div class="section-more-center">
-                      <a href="./projects.html" 
+                      <a href="./projects.php"
                          hreflang="en">
                         <p>
                             See about us
@@ -256,9 +198,9 @@
 
             </section>
 
-          </main>
+        </main>
 
-      <?php 
+      <?php
       include_once './content/footer.html';
       ?>
 
@@ -267,9 +209,6 @@
       </script>
 
       <!-- Scripts -->
-      <script src=".\\js\\main-application.js">
-      </script>
-
       <script src=".\\js\\menu-application.js">
       </script>
 
@@ -297,6 +236,6 @@
               href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
               integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
               crossorigin="anonymous">
-       
+
     </body>
 </html>

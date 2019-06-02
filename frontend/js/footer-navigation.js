@@ -2,7 +2,7 @@ var buffer_json = null;
 
 function createTag( entity )
 {
-  console.log(entity);
+  //console.log(entity);
 
 
   var entity_result = new EntityTag();
@@ -25,7 +25,7 @@ function EntityTag()
     return this.tag;
   };
 
-  
+
   this.getName = function()
   {
     return this.name;
@@ -39,17 +39,17 @@ function EntityTag()
   this.setTag = function( tag_value )
   {
     this.tag = tag_value;
-  }
+  };
 
   this.setName = function( name_value )
   {
     this.name = name_value;
-  }
+  };
 
   this.setLinks = function( links_value )
   {
     this.link= links_value;
-  }
+  };
 
 }
 
@@ -60,7 +60,7 @@ var footer_app = new Vue(
     data:
     {
       fetched_post_data: null,
-      
+
       social_navigation:
       [
         {
@@ -116,12 +116,12 @@ var footer_app = new Vue(
 
       listed_tags:
       [
-        
+
       ],
 
       misc:
       [
-        // -- type -- 
+        // -- type --
         // type : 0  text
         // type : 1  link
         {
@@ -154,7 +154,7 @@ var footer_app = new Vue(
           link:'https://journal.designermadsen.com/wp-login.php',
           type:1
         }
-          
+
       ]
 
 
@@ -171,26 +171,24 @@ var footer_app = new Vue(
 
         var arr = [  ];
 
-        for( i =0; 
-             i < code.data.length; 
-             i++)
+
+        for( i = 0;
+             i < code.data.length;
+             i ++ )
         {
           var obj = createTag( code.data[i] );
-          arr.push(obj);
+          arr.push( obj );
         }
 
-        
         this.listed_tags = arr;
       }
-
-      
-
 
     },
     mounted: function()
     {
+      var max = 100;
       axios
-      .get('https://journal.designermadsen.com/wp-json/wp/v2/tags')
+      .get('https://journal.designermadsen.com/wp-json/wp/v2/tags/?per_page=' + 100)
       .then( Response => ( this.parse_tags( Response )  ) );
     }
   }

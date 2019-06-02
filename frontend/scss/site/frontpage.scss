@@ -268,11 +268,24 @@
 }
 
 //
+.section-more-center 
+{
+  
+  width:200px;
+  border:1px solid $link-color;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-more-center:hover 
+{
+  border:1px solid $link-color-activated;
+}
+
 .section-more-center a
 {
   text-decoration: none;
   color:$link-color;
-  
 }
 
 .section-more-center a p 
