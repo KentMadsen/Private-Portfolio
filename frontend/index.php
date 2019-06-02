@@ -204,32 +204,10 @@
       include_once './content/footer.html';
       ?>
 
-      <!-- Frameworks -->
-      <script src=".\\install\\framework\\vue.js">
-      </script>
 
-      <!-- Scripts -->
-      <script src=".\\js\\menu-application.js">
-      </script>
-
-      <script src=".\\js\\footer-navigation.js">
-      </script>
-
-      <script src=".\\js\\show-case-projects.js">
-      </script>
-
-      <!-- External Scripts -->
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136121264-1"></script>
-
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'UA-136121264-1');
-      </script>
-       <!-- Global site tag (gtag.js) - Google Analytics -->
+      <?php
+          include_once './content/content.html';
+      ?>
 
        <!--  -->
        <link rel="stylesheet"

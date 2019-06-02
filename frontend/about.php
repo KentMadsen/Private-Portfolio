@@ -18,10 +18,10 @@
         <link rel="stylesheet"
               href="./css/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
               rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" 
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
               rel="stylesheet">
     </head>
 
@@ -31,49 +31,21 @@
           ?>
 
           <main>
-            
+
           </main>
 
           <?php
             include_once './content/footer.html';
           ?>
-    
-      
-      <!-- Frameworks -->
-      <script src=".\\install\\framework\\vue.js">
-      </script>
 
-      <!-- Scripts -->
-      <script src=".\\js\\main-application.js">
-      </script>
-
-      <script src=".\\js\\menu-application.js">
-      </script>
-
-      <script src=".\\js\\footer-navigation.js">
-      </script>
-
-      <script src=".\\js\\show-case-projects.js">
-      </script>
-
-      <!-- External Scripts -->
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136121264-1"></script>
-
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'UA-136121264-1');
-      </script>
-       <!-- Global site tag (gtag.js) - Google Analytics -->
-
+      <?php
+      include_once './content/content.html';
+      ?>
        <!--  -->
        <link rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
               integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
               crossorigin="anonymous">
-       
+
     </body>
 </html>
