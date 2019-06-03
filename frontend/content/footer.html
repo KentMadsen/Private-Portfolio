@@ -3,7 +3,7 @@
 <!-- -->
     <section>
         <div>
-            
+
         </div>
     </section>
 
@@ -11,67 +11,67 @@
         <div class="bag-of-words">
             <p>
                 Browse all keywords
-            </p> 
-            
-            <ul> 
+            </p>
+
+            <ul>
                 <li v-for="item in listed_tags">
                     <a v-bind:href="item.link">
                         {{ item.tag }}
                     </a>
                 </li>
             </ul>
-            
+
         </div>
     </section>
 
-    <section>    
-        <div> 
+    <section>
+        <div>
             <ul class="social-menu">
                 <template v-for="item in social_navigation">
-                                
+
                     <!-- social-facebook -->
                     <li>
-                        <a v-bind:href="item.link" 
+                        <a v-bind:href="item.link"
                         v-bind:hreflang="item.language"
                         @:click="clickEvenFilterTag()">
                             <template>
-                                <i class="fab fa-facebook" 
+                                <i class="fab fa-facebook"
                                 v-if="item.source === 1">
                                 </i>
 
-                                <i class="fab fa-twitter" 
+                                <i class="fab fa-twitter"
                                 v-else-if="item.source === 2">
                                 </i>
-                                                            
-                                <i class="fab fa-behance" 
+
+                                <i class="fab fa-behance"
                                 v-else-if="item.source === 3">
                                 </i>
 
-                                <i class="fab fa-medium" 
+                                <i class="fab fa-medium"
                                 v-else-if="item.source === 4">
                                 </i>
 
-                                <i class="fab fa-linkedin" 
+                                <i class="fab fa-linkedin"
                                 v-else-if="item.source === 5">
                                 </i>
 
-                                <i class="fab fa-deviantart" 
+                                <i class="fab fa-deviantart"
                                 v-else-if="item.source === 6">
                                 </i>
 
-                                <i class="fab fa-github" 
+                                <i class="fab fa-github"
                                 v-else-if="item.source === 7">
                                 </i>
 
                                 <i class="fab fa-question" v-else >
                                 </i>
-                            </template> 
+                            </template>
 
                         </a>
 
                     </li>
                 </template>
-                    
+
             </ul>
         </div>
     </section>

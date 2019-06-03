@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
-
         <meta http-equiv="X-UA-Compatible"
               content="ie=edge">
 
@@ -21,13 +18,13 @@
         <?php
           include_once './content/font.html';
         ?>
-
     </head>
 
     <body>
-      <?php
-        include_once './content/header.html';
-      ?>
+      <div id="application-framework">
+        <?php
+          include_once './content/header.html';
+        ?>
 
           <main>
             <section>
@@ -65,6 +62,7 @@
                         <span class="bold">
                           User Experience
                         </span>
+
                       </br>
                         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
                         nisi ipsum venenatis turpis, a dictum velit odio sed augue.
@@ -77,6 +75,7 @@
                       <span class="bold">
                         Responsive Design
                       </span>
+
                     </br>
                       Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
                       nisi ipsum venenatis turpis, a dictum velit odio sed augue.
@@ -118,6 +117,7 @@
                              <a v-bind:href="item.link"
                                 v-bind:hreflang="item.language"
                                 v-bind:title="item.title">
+
                                <div class="card-size">
                                  <p class="card-registered disable-select"
                                     v-html="item.registered">
@@ -171,7 +171,12 @@
             </section>
 
             <section class="overlay-area-dark-blue">
+              <div class="boundary">
+                <h2> </h2>
+                <p>
+                </p>
 
+              </div>
 
 
             </section>
@@ -187,17 +192,21 @@
                       </a>
                     </div>
 
-              </div>
-
             </section>
 
+            </div>
+
+            <?php
+
+              include_once './content/footer.html';
+            ?>
         </main>
 
       <?php
-        include_once './content/footer.html';
         include_once './content/content.html';
       ?>
 
+    </div>
 
     </body>
 </html>
