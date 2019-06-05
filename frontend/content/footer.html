@@ -1,4 +1,4 @@
-<footer id="footer-navigation" 
+<footer id="footer-navigation"
         class="overlay-area-dark-blue">
 <!-- -->
     <section>
@@ -7,94 +7,5 @@
         </div>
     </section>
 
-    <section>
-        <div class="bag-of-words">
-            <p>
-                Browse all keywords
-            </p>
-
-            <ul>
-                <li v-for="item in listed_tags">
-                    <a v-bind:href="item.link">
-                        {{ item.tag }}
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </section>
-
-    <section>
-        <div>
-            <ul class="social-menu">
-                <template v-for="item in social_navigation">
-
-                    <!-- social-facebook -->
-                    <li>
-                        <a v-bind:href="item.link"
-                        v-bind:hreflang="item.language"
-                        @:click="clickEvenFilterTag()">
-                            <template>
-                                <i class="fab fa-facebook"
-                                v-if="item.source === 1">
-                                </i>
-
-                                <i class="fab fa-twitter"
-                                v-else-if="item.source === 2">
-                                </i>
-
-                                <i class="fab fa-behance"
-                                v-else-if="item.source === 3">
-                                </i>
-
-                                <i class="fab fa-medium"
-                                v-else-if="item.source === 4">
-                                </i>
-
-                                <i class="fab fa-linkedin"
-                                v-else-if="item.source === 5">
-                                </i>
-
-                                <i class="fab fa-deviantart"
-                                v-else-if="item.source === 6">
-                                </i>
-
-                                <i class="fab fa-github"
-                                v-else-if="item.source === 7">
-                                </i>
-
-                                <i class="fab fa-question" v-else >
-                                </i>
-                            </template>
-
-                        </a>
-
-                    </li>
-                </template>
-
-            </ul>
-        </div>
-    </section>
-
-    <div class="boundary misc">
-        <ul>
-            <template v-for="item in misc">
-                <li v-if="item.type === 0">
-                    <p>
-                        {{
-                        item.content
-                        }}
-                    </p>
-                </li>
-
-                <li v-else-if="item.type === 1">
-                    <a v-bind:href="item.link">
-                        {{
-                        item.content
-                        }}
-                    </a>
-                </li>
-            </template>
-        </ul>
     </div>
 </footer>

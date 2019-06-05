@@ -1,16 +1,17 @@
 var buffer_json = null;
 
-var application = new Vue(
+var application = new Vue
+(
   {
     el:'#application-framework',
 
     data:
-      {
+    {
 
-        listed_post_summaries:
-        [
+      listed_post_summaries:
+      [
 
-        ],
+      ],
 
       projects:
       {
@@ -21,48 +22,78 @@ var application = new Vue(
       },
 
       //
-      mainNavigation:
-      [
+      navigation:
+      {
+        header:
         {
-          url:"./index.php",
-          name:"Kent Madsen",
-          language:"en"
+          menu:
+          {
+            main:
+            [
+              { 
+                uri:"./index.php",
+                name:"Kent Madsen",
+
+                language:
+                {
+                  acronym:"en", 
+                  name:"english"
+                },
+
+                title:""
+              }
+
+            ],
+
+            secondary:
+            [
+              
+              {
+                uri:"./about.php",
+                name:"About",
+
+                language:
+                { 
+                  acronym:"en", 
+                  name:"english"
+                },
+
+                title:""
+              },
+
+              {
+                uri:"./projects.php",
+                name:"Projects",
+
+                language:
+                {
+                  acronym:"en", 
+                  name:"english"
+                },
+
+                title:""
+              },
+
+              {
+                uri:"./gallery.php",
+                name:"Gallery",
+
+                language:
+                {
+                  acronym:"en", 
+                  name:"english"
+                },
+
+                title:""
+                
+              },
+            ]
+
+          }
+
         }
 
-      ],
-
-      //
-      linkNavigation:
-      [
-        {
-          url:"./about.php",
-          name:"About",
-          language:"en"
-        },
-
-        {
-          url:"./contact.php",
-          name:"Contact",
-          language:"en"
-        },
-
-        {
-          url:"./projects.php",
-          name:"Projects",
-          language:"en"
-        },
-
-        {
-          url:"./gallery.php",
-          name:"Gallery",
-          language:"en"
-        },
-
-      ],
-
-      fetched_post_data: null
-
-
+      },
 
     },
 
@@ -88,8 +119,9 @@ var application = new Vue(
 
           a.setLink( obj.link );
           a.setRegistered( obj.date );
-          a.setTitle( obj.title["rendered"] );
-          a.setSummary( obj.excerpt["rendered"] );
+
+          a.setTitle( obj.title[ variable_render ] );
+          a.setSummary( obj.excerpt[ variable_render ] );
 
           this.listed_post_summaries.push( a );
         }
@@ -109,7 +141,7 @@ var application = new Vue(
              i < children.length;
              i++ )
         {
-          console.log( children[i] );
+          
         }
 
       },
@@ -118,7 +150,7 @@ var application = new Vue(
 
     mounted: function()
     {
-
+      
 
     }
 

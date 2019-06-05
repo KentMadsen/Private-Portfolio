@@ -3,8 +3,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
+
         <meta http-equiv="X-UA-Compatible"
               content="ie=edge">
 
@@ -111,45 +113,6 @@
 
                     <div class="card-container">
 
-                        <template v-for="item in listed_post_summaries">
-
-                           <div class="card">
-                             <a v-bind:href="item.link"
-                                v-bind:hreflang="item.language"
-                                v-bind:title="item.title">
-
-                               <div class="card-size">
-                                 <p class="card-registered disable-select"
-                                    v-html="item.registered">
-                                   {{
-                                     item.registered
-                                   }}
-                                 </p>
-
-                                 <p class="card-title disable-select"
-                                    v-html="item.title">
-                                   {{
-                                     item.title
-                                   }}
-                                 </p>
-
-                                  <p class="card-summary disable-select"
-                                     v-html="item.summary">
-                                    {{
-                                      item.summary
-                                    }}
-                                  </p>
-                               </div>
-
-                               <div class="card-more">
-                                 <i class="fas fa-link">
-                                 </i>
-                               </div>
-
-                             </a>
-                           </div>
-
-                        </template>
 
                     </div>
 

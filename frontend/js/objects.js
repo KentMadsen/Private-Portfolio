@@ -1,69 +1,120 @@
-// functions
-function createTag( entity )
+function EntityLanguage()
 {
-  var entity_result = new EntityTag();
+  constructor()
+  {
 
-  entity_result.setLinks( entity.link );
-  entity_result.setTag( entity.name );
-  entity_result.setName( entity.slug );
+  }
 
-  return entity_result;
-};
+  this.name = variable_none;
+  this.acronym = variable_none;
+
+  this.class_name = 'EntityLanguage';
+}
 
 // Classes
   //
+function EntitySocial()
+{
+  constructor()
+  {
+
+  }
+
+  this.url = variable_none;
+  this.media = variable_none;
+
+  this.class_name = 'EntitySocialMenu';
+}
+
 function EntityTag()
 {
+  constructor()
+  {
+
+  }
+
+  //
+  this.id = variable_none;
+
   this.tag = variable_none;
   this.name = variable_none;
+
+  //
   this.link = variable_none;
 
   //
+  this.language = {};
+  
+  this.class_name = 'EntityTag';
+
+  // Function
+    // link
+  this.getLink = function()
+  {
+    return this.link;
+  };
+
+  this.setLink = function( links_value )
+  {
+    this.link = links_value;
+  };
+
+    // tag
+  this.setTag = function( tag_value )
+  {
+    this.tag = tag_value;
+  };
+
   this.getTag = function()
   {
     return this.tag;
+  };
+
+  //
+  this.getLanguage = function()
+  {
+    return this.language;
+  };
+
+  this.setLanguage = function( language_var, 
+                               acronym_var )
+  {
+    this.language = 
+    {
+      name: language_var,
+      acronym: acronym_var
+    };
+
+  };
+
+// name
+  this.setName = function( name_value )
+  {
+    this.name = name_value;
   };
 
   this.getName = function()
   {
     return this.name;
   };
-
-  this.getLink = function()
-  {
-    return this.link;
-  };
-
-  this.setTag = function( tag_value )
-  {
-    this.tag = tag_value;
-  };
-
-  this.setName = function( name_value )
-  {
-    this.name = name_value;
-  };
-
-  this.setLinks = function( links_value )
-  {
-    this.link = links_value;
-  };
-
 }
 
     //
 function EntitySummaryPost()
 {
-  this.registered = variable_none;
-
   this.title = variable_none;
   this.summary = variable_none;
+
   this.tags = [ null ];
 
+  //
+  this.registered = variable_none;
+
   this.link = variable_none;
-  this.language = variable_none;
+  this.language = {};
 
   // Accessors
+     // Link
   this.getLink = function()
   {
     return this.link;
@@ -74,6 +125,7 @@ function EntitySummaryPost()
     this.link = object;
   };
 
+  // Language
   this.getLanguage = function()
   {
     return this.language;
@@ -84,6 +136,7 @@ function EntitySummaryPost()
     this.language = object;
   };
 
+  // gtags
   this.getTags = function()
   {
     return this.tags;
@@ -94,6 +147,7 @@ function EntitySummaryPost()
     this.tags = object;
   };
 
+  // Summary
   this.getSummary = function()
   {
     return this.summary;
@@ -104,6 +158,7 @@ function EntitySummaryPost()
     this.summary = object;
   };
 
+  // Title
   this.getTitle = function()
   {
     return this.title;
@@ -114,6 +169,7 @@ function EntitySummaryPost()
     this.title = object;
   };
 
+  // Register
   this.getRegistered = function()
   {
     return this.registered;

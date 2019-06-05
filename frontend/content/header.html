@@ -6,44 +6,44 @@
         <div class="header-navigation-main">
           <ul class="header-navigation-list default-list">
             
-            <template v-for="item in mainNavigation">
+            <template v-for="item in navigation.header.menu.main">
+              
               <li class="nav-header-menu">
-                <a  v-bind:href="item.url" 
-                    v-bind:hreflang="item.language">
-                    {{
-                      item.name
-                    }}
+                
+                <a v-bind:href="item.uri" 
+                   v-bind:hreflang="item.language.acronym"> 
+                {{
+                  item.name
+                }}
                 </a>
+
               </li>
+
             </template>
           </ul>
+
         </div>
 
         <div class="header-navigation-empty">
 
         </div>
 
-        <div class="header-navigation-secondary" 
-             id="menu-navigation">
+        <div class="header-navigation-secondary">
 
           <ul class="nav-header-menu list-move-to-right-end">
-
-            <template  v-for="item in linkNavigation">
-
-                <li>
-                  <a v-bind:href="item.url" 
-                     v-bind:hreflang="item.language">
-
-                    <p>
-                      {{
-                        item.name
-                      }}
-                    </p>
-
-                  </a>
-                </li>
-
-              </template>
+                <template v-for="item in navigation.header.menu.secondary">
+              
+                  <li class="nav-header-menu">
+                    
+                    <a v-bind:href="item.uri" 
+                       v-bind:hreflang="item.language.acronym"> 
+                    {{
+                      item.name
+                    }}
+                    </a>
+    
+                  </li>
+                </template>
 
           </ul>
 
