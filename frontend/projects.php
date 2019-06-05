@@ -1,14 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
+
         <meta http-equiv="X-UA-Compatible"
               content="ie=edge">
 
         <title>
-          Designermadsen - Projects
+          Designermadsen - Hi, i am coder
         </title>
 
         <link rel="stylesheet"
@@ -17,22 +20,27 @@
         <?php
           include_once './content/font.html';
         ?>
-
     </head>
 
     <body>
-      <?php
+      <div id="application-framework">
+        <?php
           include_once './content/header.html';
         ?>
 
-        <main>
+          <main>
+            
+            <?php
 
+              include_once './content/footer.html';
+            ?>
         </main>
 
-        <?php
-          include_once './content/footer.html';
-          include_once './content/content.html';
-        ?>
+      <?php
+        include_once './content/content.html';
+      ?>
+
+    </div>
 
     </body>
 </html>

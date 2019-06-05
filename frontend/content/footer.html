@@ -1,11 +1,44 @@
-<footer id="footer-navigation"
+<footer id="footer-area"
         class="overlay-area-dark-blue">
-<!-- -->
+    <!-- -->
     <section>
         <div>
 
         </div>
     </section>
 
+    <section> 
+        <div class="bag-of-words">
+            <p> Browse all keywords </p>
+
+            <ul>
+                
+            </ul>
+        </div>
+    </section>
+
+    <div class="boundary misc">
+        <ul>
+                <template v-for="item in navigation.footer.content.miscellaneous">
+
+                    <li v-if="item.type === 0">
+                        <p>
+                            {{item.content}} 
+                        </p>
+                    </li>
+
+                    <li v-else-if="item.type === 1">
+                        <a v-bind:href="item.uri">
+                            {{item.content}} 
+                        </a>
+                    </li>
+
+                </template>
+        </ul>
+
     </div>
+
+
+
+    
 </footer>

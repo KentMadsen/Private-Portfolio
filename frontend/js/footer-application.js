@@ -1,9 +1,7 @@
-var buffer_json = null;
-
-var application = new Vue
+var footerArea = new Vue
 (
   {
-    el:'#application-framework',
+    el:'#footer-area',
 
     data:
     {
@@ -16,75 +14,93 @@ var application = new Vue
       //
       navigation:
       {
-        header:
+        footer:
         {
-          menu:
+          content:
           {
-            main:
+            miscellaneous:
             [
-              { 
-                uri:"./index.php",
-                name:"Kent Madsen",
+              {
+                type:0,
+
+                content:"Copyright 2019 Kent vejrup Madsen",
+
+                uri:"None",
 
                 language:
                 {
-                  acronym:"en", 
+                  acronym:"en",
                   name:"english"
                 },
 
-                title:""
-              }
+                title:"None"
+              },
 
-            ],
-
-            secondary:
-            [
-              
               {
+                type:1,
+
+                content:"Data & Cookie Privacy",
+
+                uri:"",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                title:"None"
+              },
+
+              {
+                type:1,
+                content:"GDPR",
+
                 uri:"./page.php",
-                name:"About",
-
-                language:
-                { 
-                  acronym:"en", 
-                  name:"english"
-                },
-
-                title:""
-              },
-
-              {
-                uri:"./projects.php",
-                name:"Projects",
 
                 language:
                 {
-                  acronym:"en", 
+                  acronym:"en",
                   name:"english"
                 },
 
-                title:""
+                title:"None"
               },
 
               {
-                uri:"./gallery.php",
-                name:"Gallery",
+                type:1,
+                content:"Terms of Service",
+
+                uri:"./page.php",
 
                 language:
                 {
-                  acronym:"en", 
+                  acronym:"en",
                   name:"english"
                 },
-
-                title:""
-                
+                title:"None"
               },
+
+              {
+                type:1,
+                content:"Backend login",
+
+                uri:"https://journal.designermadsen.com/wp-login.php",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+                title:"None"
+              }
             ]
 
           }
 
-        },
-      
+          
+        }
+
       },
 
     },

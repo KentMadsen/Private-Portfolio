@@ -158,18 +158,16 @@
             </section>
 
             </div>
-
-            <?php
-
-              include_once './content/footer.html';
-            ?>
         </main>
-
-      <?php
-        include_once './content/content.html';
-      ?>
-
     </div>
+    
+    <?php
+
+      include_once './content/footer.html';
+      
+      include_once './content/content.html';
+    ?>
+
 
     </body>
 </html>
