@@ -18,6 +18,113 @@ var footerArea = new Vue
         {
           content:
           {
+            bag_of_tags:
+            [
+
+            ],
+
+            social_media:
+            [
+              {
+                uri:"https://github.com/KentMadsen",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                show: '<i class="fab fa-github"></i>',
+                
+                title: ''
+              },
+
+              {
+                uri:"https://www.deviantart.com/designermadsen/",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                show: '<i class="fab fa-deviantart"></i>',
+                
+                title: ''
+              },
+
+              {
+                uri:"https://www.linkedin.com/company/designermadsen",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                show: '<i class="fab fa-linkedin"></i>',
+                
+                title: ''
+              },
+              
+              {
+                uri:"https://medium.com/@DesignerMadsen",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                show: '<i class="fab fa-medium"></i>',
+                
+                title: ''
+              },
+
+              {
+                uri:"https://www.behance.net/designermadsen",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                show: '<i class="fab fa-behance"></i>',
+                
+                title: ''
+              },
+
+              {
+                uri:"https://twitter.com/designermadsen",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                show: '<i class="fab fa-twitter"></i>',
+                
+                title: ''
+              },
+
+              {
+                uri:"https://www.facebook.com/DesignerMadsen-585524325269884",
+
+                language:
+                {
+                  acronym:"en",
+                  name:"english"
+                },
+
+                show: '<i class="fab fa-facebook"></i>',
+                
+                title: ''
+              }
+
+            ],
+
             miscellaneous:
             [
               {
@@ -112,47 +219,6 @@ var footerArea = new Vue
 
     methods:
     {
-
-      parse_projects : function( event )
-      {
-        var i = 0;
-
-        for( i = 0;
-             i < event.data.length;
-             i ++ )
-        {
-          var obj = event.data[i];
-
-          var a = new SummaryPost();
-
-          a.setLink( obj.link );
-          a.setRegistered( obj.date );
-
-          a.setTitle( obj.title[ variable_render ] );
-          a.setSummary( obj.excerpt[ variable_render ] );
-
-          this.listed_post_summaries.push( a );
-        }
-
-      },
-
-
-      clickEvenFilterTag : function ( event )
-      {
-        var target = event.target;
-
-        var children = target.childNodes;
-
-        var i = 0;
-
-        for( i = 0;
-             i < children.length;
-             i++ )
-        {
-          
-        }
-
-      },
 
     },
 

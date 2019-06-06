@@ -3,13 +3,26 @@
     <!-- -->
     <section>
         <div>
+            <ul class="social-menu">
+                <template v-for="item in navigation.footer.content.social_media">
+                    <li>
+                        <a v-bind:href="item.uri" 
+                        v-bind:hreflang="item.language.acronym" 
+                        v-html="item.show">
+                        {{ item.show }}  
+                        </a>
+                    </li>
+                </template>
+            </ul>
 
         </div>
     </section>
 
-    <section> 
+    <section hidden> 
         <div class="bag-of-words">
-            <p> Browse all keywords </p>
+            <p> 
+                Browse all keywords 
+            </p>
 
             <ul>
                 
@@ -19,17 +32,24 @@
 
     <div class="boundary misc">
         <ul>
-                <template v-for="item in navigation.footer.content.miscellaneous">
+            <!-- -->
+                <template v-for="item in navigation.footer.content.miscellaneous">    
 
+                <!-- -->
                     <li v-if="item.type === 0">
                         <p>
-                            {{item.content}} 
+                            {{
+                                item.content
+                            }} 
                         </p>
                     </li>
-
+    
+                <!-- -->
                     <li v-else-if="item.type === 1">
                         <a v-bind:href="item.uri">
-                            {{item.content}} 
+                            {{
+                                item.content
+                            }} 
                         </a>
                     </li>
 
@@ -38,7 +58,4 @@
 
     </div>
 
-
-
-    
 </footer>
