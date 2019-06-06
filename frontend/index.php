@@ -42,19 +42,19 @@
             <section class="overlay-area-gray">
               <div class="boundary">
                 <p class="section-name">
-                  Competences
+                  Interesse områder
                 </p>
 
                 <div class="three-elements-container">
                   <div class="contain">
                     <p class="key">
                       <span class="bold">
-                        Coding
+                        Kodning
                       </span>
+                    </p>
 
-                    </br>
-                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
-                      nisi ipsum venenatis turpis, a dictum velit odio sed augue.
+                    <p class="text-area"> 
+                      Kan programmere i PHP, Java, samt webdevelopment. HTML, CSS og JavaScript
                     </p>
 
                   </div>
@@ -64,10 +64,10 @@
                         <span class="bold">
                           User Experience
                         </span>
+                    </p>
 
-                      </br>
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
-                        nisi ipsum venenatis turpis, a dictum velit odio sed augue.
+                    <p class="text-area"> 
+                      Går op i at lave simple løsninger, der er nemme at navigere for brugeren
                     </p>
 
                   </div>
@@ -77,10 +77,10 @@
                       <span class="bold">
                         Responsive Design
                       </span>
+                    </p>
 
-                    </br>
-                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt,
-                      nisi ipsum venenatis turpis, a dictum velit odio sed augue.
+                    <p class="text-area"> 
+                      Lave moderne hjemmesider, som ved hjælp af css media queries, er mobil venlige
                     </p>
                   </div>
 
@@ -113,49 +113,90 @@
 
                     <div class="card-container">
 
+                      <template v-for="post in listed_post_summaries"> 
+                        <div class="card"> 
+                          
+                          <a > 
+
+                            <div> 
+                              <p class="card-registered"> {{post.registered}} </p>
+                              <p class="card-title"> {{post.title}} </p>
+                              <p class="card-summary"> {{post.summary}} </p>
+
+                            </div>
+
+                          </a>
+
+                        </div>
+                      </template>
 
                     </div>
 
                   </div>
 
-                  <div class="section-more">
-                      <a href="./projects.php"
-                         hreflang="en">
-                        <p>
-                            See all projects
-                        </p>
-                      </a>
-                    </div>
 
+              </div>
+
+            </section>
+
+            <section class="overlay-area-gray">
+              <div class="boundary">
+                <h2 class="section-name"> 
+                  Hvem jeg er 
+                </h2>
+
+                <p class="text-area center-text">
+                  Hej, Mit navn er Kent vejrup Madsen. Jeg en 24 årig knight, der igang med at blive uddannet til Multimediadesigner AK.
+                </br>
+                  Med interesse indenfor koding og grafik.
+                </p>
+
+                <h2 class="section-name"> 
+                  Kontakt 
+                </h2>
+                
+                <div class="column">
+                  <p class="text-area">
+                  <span class="bold"> 
+                    Telefon
+                  </span> 
+                  </p>
+
+                  <p class="text-area"> 
+                    51 90 29 14
+                  </p>
+                </div>
+
+                <div class="column">
+                  <p class="text-area"> 
+                  <span class="bold"> 
+                    E-mail
+                  </span>
+                  </p>
+
+                  <p class="text-area"> 
+                    Kent.vejrup.madsen@outlook.com
+                  </p>
+                </div>
+
+                <div class="column">
+                  <p class="text-area"> 
+                  <span class="bold"> 
+                    Addresse
+                  </span>
+                  </p>
+
+                  <p class="text-area"> 
+                    Kirkebakken 39, </br>
+                    6705, </br>
+                    Danmark
+                  </p>
                 </div>
 
               </div>
 
             </section>
 
-            <section class="overlay-area-dark-blue">
-              <div class="boundary">
-                <h2> </h2>
-                <p>
-                </p>
-
-              </div>
-
-
-            </section>
-
-            <section>
-
-            <div class="section-more-center">
-                      <a href="./about.php"
-                         hreflang="en">
-                        <p>
-                            See about us
-                        </p>
-                      </a>
-                    </div>
-
-            </section>
 
             </div>
         </main>

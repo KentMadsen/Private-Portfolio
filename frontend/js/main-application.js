@@ -10,8 +10,52 @@ var application = new Vue
 
       listed_post_summaries:
       [
+        {
+          identity:1,
+          registered:'6 days ago',
+          title:'Lorem Ipsum',
+          summary:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa",
+          description:'',
+
+          resources:
+          {
+
+          }
+        },
+
+        {
+          identity:2,
+          registered:'6 days ago',
+          title:'Lorem Ipsum',
+          summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa ',
+          description:'',
+          
+          resources:
+          {
+
+          }
+        },
+
+        {
+          identity:3,
+          registered:'6 days ago',
+          title:'Lorem Ipsum',
+          summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa ',
+          description:'',
+          
+          resources:
+          {
+
+          }
+        }
 
       ],
+
+      active_page: 
+      {
+        id:null,
+        selected:false
+      },
 
       //
       navigation:
@@ -39,7 +83,7 @@ var application = new Vue
 
             secondary:
             [
-              
+              /*
               {
                 uri:"./page.php",
                 name:"About",
@@ -51,8 +95,8 @@ var application = new Vue
                 },
 
                 title:""
-              },
-
+              },*/
+/*
               {
                 uri:"./projects.php",
                 name:"Projects",
@@ -64,9 +108,9 @@ var application = new Vue
                 },
 
                 title:""
-              },
+              },*/
 
-              {
+              /*{
                 uri:"./gallery.php",
                 name:"Gallery",
 
@@ -78,7 +122,7 @@ var application = new Vue
 
                 title:""
                 
-              },
+              }, */
             ]
 
           }
