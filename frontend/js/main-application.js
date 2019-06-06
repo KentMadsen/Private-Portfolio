@@ -11,24 +11,29 @@ var application = new Vue
       listed_post_summaries:
       [
         {
-          identity:1,
+          identity: 1,
+
           registered:'6 days ago',
-          title:'Lorem Ipsum',
+          title:'Search Engine Optimising Project',
           summary:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa",
-          description:'',
+          uri:'https://github.com/KentMadsen/EASV-SEO-Website',
+          uri_content:'<i class="fab fa-github"></i>',
 
           resources:
           {
+            
 
           }
         },
 
         {
-          identity:2,
+          identity: 2,
+          
           registered:'6 days ago',
-          title:'Lorem Ipsum',
+          title:'Første Semester Eksamens Projekt',
           summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa ',
-          description:'',
+          uri:'https://github.com/KentMadsen/EASV-Multimedia-1.-Semester-Project-Website',
+          uri_content:'<i class="fab fa-github"></i>',
           
           resources:
           {
@@ -37,11 +42,13 @@ var application = new Vue
         },
 
         {
-          identity:3,
+          identity: 3,
+          
           registered:'6 days ago',
-          title:'Lorem Ipsum',
+          title:'Rybners Specialiseret studieprojekt',
           summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa ',
-          description:'',
+          uri:'https://github.com/KentMadsen/Rybners-SpecialisedStudyProject',
+          uri_content:'<i class="fab fa-github"></i>',
           
           resources:
           {
@@ -50,12 +57,6 @@ var application = new Vue
         }
 
       ],
-
-      active_page: 
-      {
-        id:null,
-        selected:false
-      },
 
       //
       navigation:

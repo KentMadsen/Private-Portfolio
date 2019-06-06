@@ -116,12 +116,24 @@
                       <template v-for="post in listed_post_summaries"> 
                         <div class="card"> 
                           
-                          <a > 
-
+                          <a v-bind:href="post.uri"> 
                             <div> 
-                              <p class="card-registered"> {{post.registered}} </p>
-                              <p class="card-title"> {{post.title}} </p>
-                              <p class="card-summary"> {{post.summary}} </p>
+                              <p class="card-registered"> 
+                                {{post.registered}} 
+                              </p>
+                              
+                              <p class="card-title"> 
+                                {{post.title}} 
+                              </p>
+
+                              <p class="card-summary"> 
+                                {{post.summary}} 
+                              </p>
+
+                            </div>
+
+                            <div class="card-more" v-html="post.uri_content">
+                              {{post.uri_content}}
 
                             </div>
 
@@ -148,7 +160,7 @@
                 <p class="text-area center-text">
                   Hej, Mit navn er Kent vejrup Madsen. Jeg en 24 årig knight, der igang med at blive uddannet til Multimediadesigner AK.
                 </br>
-                  Med interesse indenfor koding og grafik.
+                  Med interesse indenfor kodning og grafik. Som hovedpunkt så det der fanger mig, er at løse problemstillinger og være pragmatisk.
                 </p>
 
                 <h2 class="section-name"> 
