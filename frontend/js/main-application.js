@@ -15,7 +15,7 @@ var application = new Vue
 
           registered:'6 days ago',
           title:'Search Engine Optimising Project',
-          summary:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa",
+          summary:"Et projekt hvor at jeg skulle lave en hjemmeside, som var SEO optimiseret. En process der gør det nemmere for søgemaskiner at læse og indeksere indholdet på hjemmesiden.",
           uri:'https://github.com/KentMadsen/EASV-SEO-Website',
           uri_content:'<i class="fab fa-github"></i>',
 
@@ -31,7 +31,7 @@ var application = new Vue
           
           registered:'6 days ago',
           title:'Første Semester Eksamens Projekt',
-          summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa ',
+          summary:'Et projekt til multimediadesigner ak, første semester eksamens projekt. Hvor at vi skulle lave en hjemmeside angående rummet til Illustreret Videnskab.',
           uri:'https://github.com/KentMadsen/EASV-Multimedia-1.-Semester-Project-Website',
           uri_content:'<i class="fab fa-github"></i>',
           
@@ -46,7 +46,7 @@ var application = new Vue
           
           registered:'6 days ago',
           title:'Rybners Specialiseret studieprojekt',
-          summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, mi sit amet faucibus tincidunt, nisi lorem scelerisque ipsum, ac scelerisque eros massa ',
+          summary:'Et projekt til studieretningsprojektet på rybners htx, hvor at jeg skulle lave et program der kunne tekst klassifiere en bestemt stykke tekst ved hjælp af naive bayes.',
           uri:'https://github.com/KentMadsen/Rybners-SpecialisedStudyProject',
           uri_content:'<i class="fab fa-github"></i>',
           

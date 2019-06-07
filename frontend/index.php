@@ -118,23 +118,34 @@
                           
                           <a v-bind:href="post.uri"> 
                             <div> 
-                              <p class="card-registered"> 
-                                {{post.registered}} 
+                              <p class="card-registered" 
+                                 v-html="post.registered"> 
+                                {{
+                                  post.registered
+                                }} 
                               </p>
                               
-                              <p class="card-title"> 
-                                {{post.title}} 
+                              <p class="card-title" 
+                                 v-html="post.title"> 
+                                {{
+                                  post.title
+                                }} 
                               </p>
 
-                              <p class="card-summary"> 
-                                {{post.summary}} 
+                              <p class="card-summary" 
+                                 v-html="post.summary"> 
+                                {{
+                                  post.summary
+                                }} 
                               </p>
 
                             </div>
 
-                            <div class="card-more" v-html="post.uri_content">
-                              {{post.uri_content}}
-
+                            <div class="card-more" 
+                                 v-html="post.uri_content">
+                              {{
+                                post.uri_content
+                              }}
                             </div>
 
                           </a>
