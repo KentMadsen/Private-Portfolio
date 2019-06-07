@@ -1,6 +1,5 @@
-<!-- https://github.com/KentMadsen/EASV-Portfolio -->
-
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -18,24 +17,16 @@
         <link rel="stylesheet"
               href="./css/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" 
-              rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" 
-              rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">  
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"> 
-        </script>
+        <?php
+          include_once './content/font.html';
+        ?>
     </head>
 
     <body>
-      <?php
-        include_once './content/header.html';
-      ?>
-          
+      <div id="application-framework">
+        <?php
+          include_once './content/header.html';
+        ?>
 
           <main>
             <section>
@@ -51,20 +42,19 @@
             <section class="overlay-area-gray">
               <div class="boundary">
                 <p class="section-name">
-                  Competences
+                  Interesse områder
                 </p>
 
                 <div class="three-elements-container">
                   <div class="contain">
                     <p class="key">
                       <span class="bold">
-                        Coding
+                        Kodning
                       </span>
+                    </p>
 
-                    </br>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                
+                    <p class="text-area"> 
+                      Kan programmere i PHP, Java, samt webdevelopment. HTML, CSS og JavaScript
                     </p>
 
                   </div>
@@ -74,11 +64,10 @@
                         <span class="bold">
                           User Experience
                         </span>
-                      </br>
+                    </p>
 
-                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                  nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                  
+                    <p class="text-area"> 
+                      Går op i at lave simple løsninger, der er nemme at navigere for brugeren
                     </p>
 
                   </div>
@@ -88,11 +77,10 @@
                       <span class="bold">
                         Responsive Design
                       </span>
-                    </br>
+                    </p>
 
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                
+                    <p class="text-area"> 
+                      Lave moderne hjemmesider, som ved hjælp af css media queries, er mobil venlige
                     </p>
                   </div>
 
@@ -101,7 +89,7 @@
             </section>
 
             <section>
-              <div id="showcase-projects" 
+              <div id="showcase-projects"
                    class="boundary">
 
                 <div>
@@ -120,183 +108,130 @@
                     </ul>
                   </div>
 
-
-
                   <!-- Project -->
                   <div>
 
                     <div class="card-container">
 
-                      <div class="card">
-                        <a href="#" 
-                           hreflang="en" 
-                           title="">
-                          <div>
-                              <p class="card-registered disable-select">
-                                6 days ago
+                      <template v-for="post in listed_post_summaries"> 
+                        <div class="card"> 
+                          
+                          <a v-bind:href="post.uri"> 
+                            <div> 
+                              <p class="card-registered" 
+                                 v-html="post.registered"> 
+                                {{
+                                  post.registered
+                                }} 
                               </p>
-        
-                              <p class="card-title disable-select">
-                                Lorem Ipsum
+                              
+                              <p class="card-title" 
+                                 v-html="post.title"> 
+                                {{
+                                  post.title
+                                }} 
                               </p>
-        
-                              <p class="card-summary disable-select">
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
-                                Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
-                                et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                                per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
-                              </p>
-                          </div>
 
-                          <div class="card-more">
-                              <i class="fas fa-link"></i>                            
-                          </div>
-                      </a>
-                      </div>
+                              <p class="card-summary" 
+                                 v-html="post.summary"> 
+                                {{
+                                  post.summary
+                                }} 
+                              </p>
 
-                      <div class="card">
-                          <a href="#" 
-                             hreflang="en" 
-                             title="">
-                            <div>
-                                <p class="card-registered disable-select">
-                                  6 days ago
-                                </p>
-          
-                                <p class="card-title disable-select">
-                                  Lorem Ipsum
-                                </p>
-          
-                                <p class="card-summary disable-select">
-                                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                  nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                  Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
-                                  Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
-                                  et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                                  per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
-                                </p>
                             </div>
-  
-                            <div class="card-more">
-                                <i class="fas fa-link"></i>                          
-                            </div>
-                        </a>
-                        </div>
 
-                        <div class="card">
-                            <a href="#" 
-                               hreflang="en" 
-                               title="">
-                              <div>
-                                  <p class="card-registered disable-select">
-                                    6 days ago
-                                  </p>
-            
-                                  <p class="card-title disable-select">
-                                    Lorem Ipsum
-                                  </p>
-            
-                                  <p class="card-summary disable-select">
-                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras egestas, diam ac fermentum tincidunt, 
-                                    nisi ipsum venenatis turpis, a dictum velit odio sed augue.
-                                    Maecenas pretium, velit nec consectetur egestas, dolor neque tempus ex, eget pretium ipsum augue eget turpis. 
-                                    Nullam dolor lacus, fringilla eu imperdiet ut, scelerisque in lacus. Donec pharetra, tellus a consequat placerat, augue dolor finibus urna, 
-                                    et placerat quam justo at leo. Phasellus iaculis nunc risus, vitae ultrices orci varius et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                                    per inceptos himenaeos. Sed consequat blandit mi eleifend fermentum.
-                                  </p>
-                              </div>
-    
-                              <div class="card-more">
-                                  <i class="fas fa-link"></i>                         
-                              </div>
+                            <div class="card-more" 
+                                 v-html="post.uri_content">
+                              {{
+                                post.uri_content
+                              }}
+                            </div>
+
                           </a>
-                          </div>
-                      
-                      
+
+                        </div>
+                      </template>
 
                     </div>
 
                   </div>
 
-                  <div class="section-more">
-                      <a href="./projects.html" 
-                         hreflang="en">
-                        <p>
-                            See all projects
-                        </p>
-                      </a>
-                    </div>
 
+              </div>
+
+            </section>
+
+            <section class="overlay-area-gray">
+              <div class="boundary">
+                <h2 class="section-name"> 
+                  Hvem jeg er 
+                </h2>
+
+                <p class="text-area center-text">
+                  Hej, Mit navn er Kent vejrup Madsen. Jeg en 24 årig knight, der igang med at blive uddannet til Multimediadesigner AK.
+                </br>
+                  Med interesse indenfor kodning og grafik. Som hovedpunkt så det der fanger mig, er at løse problemstillinger og være pragmatisk.
+                </p>
+
+                <h2 class="section-name"> 
+                  Kontakt 
+                </h2>
+                
+                <div class="column">
+                  <p class="text-area">
+                  <span class="bold"> 
+                    Telefon
+                  </span> 
+                  </p>
+
+                  <p class="text-area"> 
+                    51 90 29 14
+                  </p>
+                </div>
+
+                <div class="column">
+                  <p class="text-area"> 
+                  <span class="bold"> 
+                    E-mail
+                  </span>
+                  </p>
+
+                  <p class="text-area"> 
+                    Kent.vejrup.madsen@outlook.com
+                  </p>
+                </div>
+
+                <div class="column">
+                  <p class="text-area"> 
+                  <span class="bold"> 
+                    Addresse
+                  </span>
+                  </p>
+
+                  <p class="text-area"> 
+                    Kirkebakken 39, </br>
+                    6705, </br>
+                    Danmark
+                  </p>
                 </div>
 
               </div>
-              
-            </section>
-
-            <section class="overlay-area-dark-blue">
-              
-              
-              
-            </section>
-
-            <section>
-
-            <div class="section-more-center">
-                      <a href="./projects.html" 
-                         hreflang="en">
-                        <p>
-                            See about us
-                        </p>
-                      </a>
-                    </div>
-
-                </div>
 
             </section>
 
-          </main>
 
-      <?php 
+            </div>
+        </main>
+    </div>
+    
+    <?php
+
       include_once './content/footer.html';
-      ?>
+      
+      include_once './content/content.html';
+    ?>
 
-      <!-- Frameworks -->
-      <script src=".\\install\\framework\\vue.js">
-      </script>
 
-      <!-- Scripts -->
-      <script src=".\\js\\main-application.js">
-      </script>
-
-      <script src=".\\js\\menu-application.js">
-      </script>
-
-      <script src=".\\js\\footer-navigation.js">
-      </script>
-
-      <script src=".\\js\\show-case-projects.js">
-      </script>
-
-      <!-- External Scripts -->
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136121264-1"></script>
-
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'UA-136121264-1');
-      </script>
-       <!-- Global site tag (gtag.js) - Google Analytics -->
-
-       <!--  -->
-       <link rel="stylesheet"
-              href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-              crossorigin="anonymous">
-       
     </body>
 </html>

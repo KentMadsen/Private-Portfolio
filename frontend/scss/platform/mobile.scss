@@ -1,8 +1,44 @@
+@media only screen and (max-width: 1420px) 
+{
+  body 
+  {
+
+  }
+
+  .boundary
+  {
+    width: 100%;
+  }
+  
+}
+
 /*
 
 */
-@media only screen and (max-width: 600px) {
-  body {
+@media only screen and (max-width: 600px) 
+{
+  body 
+  {
 
   }
+
+  .three-elements-container
+  {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .card-container
+  {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .misc ul
+  {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
 }
