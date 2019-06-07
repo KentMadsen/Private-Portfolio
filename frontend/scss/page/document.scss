@@ -26,7 +26,7 @@ section:last-child
 
 .activated-menu-option
 {
-  
+
   background-color: $link-color-activated;
   border:1px solid rgba($color: #111111, $alpha: 0.0) !important;
 }
@@ -41,7 +41,6 @@ section:last-child
   border:1px solid rgba($color: #ffffff, $alpha: 0.0) !important;
 
 }
-
 
 .section-name
 {
@@ -76,5 +75,5 @@ section:last-child
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */    
+  user-select: none;          /* Likely future */
 }
